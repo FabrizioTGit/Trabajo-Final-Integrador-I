@@ -10,16 +10,5 @@
 
 
         public List<ApiProducts> Products { get; set; }
-
-        public List<string> GetCategory()
-        {
-            List<string> categories = new List<string>();
-            foreach (var product in Products)
-            {
-                categories.Add(product.Category);
-            }
-            
-            return categories.Distinct().ToList(); 
-        }
     }
 }
