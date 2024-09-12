@@ -58,8 +58,9 @@
             btnAscDesc.Name = "btnAscDesc";
             btnAscDesc.Size = new Size(106, 23);
             btnAscDesc.TabIndex = 2;
-            btnAscDesc.Text = "ASC";
+            btnAscDesc.Text = "Ascendente";
             btnAscDesc.UseVisualStyleBackColor = true;
+            btnAscDesc.Click += btnAscDesc_Click;
             // 
             // FrmMain
             // 

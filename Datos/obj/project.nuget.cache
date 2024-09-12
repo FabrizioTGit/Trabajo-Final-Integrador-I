@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "A3B4u+vC5QU=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\Nueva carpeta (3)\\Trabajo-Final-Integrador-I\\Datos\\Datos.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Administrator\\.nuget\\packages\\nlog\\5.3.3\\nlog.5.3.3.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\restsharp\\112.0.0\\restsharp.112.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

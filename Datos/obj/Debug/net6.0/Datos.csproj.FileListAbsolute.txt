@@ -1,0 +1,16 @@
+C:\Users\Administrator\Desktop\Nueva carpeta (3)\Trabajo-Final-Integrador-I\Datos\bin\Debug\net6.0\Datos.deps.json
+C:\Users\Administrator\Desktop\Nueva carpeta (3)\Trabajo-Final-Integrador-I\Datos\bin\Debug\net6.0\Datos.dll
+C:\Users\Administrator\Desktop\Nueva carpeta (3)\Trabajo-Final-Integrador-I\Datos\bin\Debug\net6.0\Datos.pdb
+C:\Users\Administrator\Desktop\Nueva carpeta (3)\Trabajo-Final-Integrador-I\Datos\bin\Debug\net6.0\Negocio.dll
+C:\Users\Administrator\Desktop\Nueva carpeta (3)\Trabajo-Final-Integrador-I\Datos\bin\Debug\net6.0\Negocio.pdb
+C:\Users\Administrator\Desktop\Nueva carpeta (3)\Trabajo-Final-Integrador-I\Datos\obj\Debug\net6.0\Datos.csproj.AssemblyReference.cache
+C:\Users\Administrator\Desktop\Nueva carpeta (3)\Trabajo-Final-Integrador-I\Datos\obj\Debug\net6.0\Datos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Administrator\Desktop\Nueva carpeta (3)\Trabajo-Final-Integrador-I\Datos\obj\Debug\net6.0\Datos.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\Nueva carpeta (3)\Trabajo-Final-Integrador-I\Datos\obj\Debug\net6.0\Datos.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\Nueva carpeta (3)\Trabajo-Final-Integrador-I\Datos\obj\Debug\net6.0\Datos.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\Nueva carpeta (3)\Trabajo-Final-Integrador-I\Datos\obj\Debug\net6.0\Datos.sourcelink.json
+C:\Users\Administrator\Desktop\Nueva carpeta (3)\Trabajo-Final-Integrador-I\Datos\obj\Debug\net6.0\Datos.csproj.Up2Date
+C:\Users\Administrator\Desktop\Nueva carpeta (3)\Trabajo-Final-Integrador-I\Datos\obj\Debug\net6.0\Datos.dll
+C:\Users\Administrator\Desktop\Nueva carpeta (3)\Trabajo-Final-Integrador-I\Datos\obj\Debug\net6.0\refint\Datos.dll
+C:\Users\Administrator\Desktop\Nueva carpeta (3)\Trabajo-Final-Integrador-I\Datos\obj\Debug\net6.0\Datos.pdb
+C:\Users\Administrator\Desktop\Nueva carpeta (3)\Trabajo-Final-Integrador-I\Datos\obj\Debug\net6.0\ref\Datos.dll
