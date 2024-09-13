@@ -31,6 +31,7 @@
             dataGridView = new DataGridView();
             cmbBoxCategory = new ComboBox();
             btnAscDesc = new Button();
+            btnAcctions = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView).BeginInit();
             SuspendLayout();
             // 
@@ -62,11 +63,22 @@
             btnAscDesc.UseVisualStyleBackColor = true;
             btnAscDesc.Click += btnAscDesc_Click;
             // 
+            // btnAcctions
+            // 
+            btnAcctions.Location = new Point(244, 83);
+            btnAcctions.Name = "btnAcctions";
+            btnAcctions.Size = new Size(75, 23);
+            btnAcctions.TabIndex = 3;
+            btnAcctions.Text = "Acciones";
+            btnAcctions.UseVisualStyleBackColor = true;
+            btnAcctions.Click += btnAcctions_Click;
+            // 
             // FrmMain
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(613, 450);
+            Controls.Add(btnAcctions);
             Controls.Add(btnAscDesc);
             Controls.Add(cmbBoxCategory);
             Controls.Add(dataGridView);
@@ -82,5 +94,6 @@
         private DataGridView dataGridView;
         private ComboBox cmbBoxCategory;
         private Button btnAscDesc;
+        private Button btnAcctions;
     }
 }

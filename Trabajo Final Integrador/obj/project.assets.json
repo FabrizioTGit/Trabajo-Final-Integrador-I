@@ -134,11 +134,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Nueva carpeta (3)\\Trabajo-Final-Integrador-I\\Trabajo Final Integrador\\Vista.csproj",
+      "projectUniqueName": "C:\\C#\\Trabajo-Final-Integrador-I\\Trabajo Final Integrador\\Vista.csproj",
       "projectName": "Vista",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\Nueva carpeta (3)\\Trabajo-Final-Integrador-I\\Trabajo Final Integrador\\Vista.csproj",
+      "projectPath": "C:\\C#\\Trabajo-Final-Integrador-I\\Trabajo Final Integrador\\Vista.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\Nueva carpeta (3)\\Trabajo-Final-Integrador-I\\Trabajo Final Integrador\\obj\\",
+      "outputPath": "C:\\C#\\Trabajo-Final-Integrador-I\\Trabajo Final Integrador\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -156,11 +156,11 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\Administrator\\Desktop\\Nueva carpeta (3)\\Trabajo-Final-Integrador-I\\Datos\\Datos.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Desktop\\Nueva carpeta (3)\\Trabajo-Final-Integrador-I\\Datos\\Datos.csproj"
+            "C:\\C#\\Trabajo-Final-Integrador-I\\Datos\\Datos.csproj": {
+              "projectPath": "C:\\C#\\Trabajo-Final-Integrador-I\\Datos\\Datos.csproj"
             },
-            "C:\\Users\\Administrator\\Desktop\\Nueva carpeta (3)\\Trabajo-Final-Integrador-I\\Negocio\\Negocio.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Desktop\\Nueva carpeta (3)\\Trabajo-Final-Integrador-I\\Negocio\\Negocio.csproj"
+            "C:\\C#\\Trabajo-Final-Integrador-I\\Negocio\\Negocio.csproj": {
+              "projectPath": "C:\\C#\\Trabajo-Final-Integrador-I\\Negocio\\Negocio.csproj"
             }
           }
         }

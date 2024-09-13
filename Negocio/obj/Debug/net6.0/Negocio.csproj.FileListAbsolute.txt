@@ -11,3 +11,16 @@ C:\Users\Administrator\Desktop\Nueva carpeta (3)\Trabajo-Final-Integrador-I\Nego
 C:\Users\Administrator\Desktop\Nueva carpeta (3)\Trabajo-Final-Integrador-I\Negocio\obj\Debug\net6.0\refint\Negocio.dll
 C:\Users\Administrator\Desktop\Nueva carpeta (3)\Trabajo-Final-Integrador-I\Negocio\obj\Debug\net6.0\Negocio.pdb
 C:\Users\Administrator\Desktop\Nueva carpeta (3)\Trabajo-Final-Integrador-I\Negocio\obj\Debug\net6.0\ref\Negocio.dll
+C:\C#\Trabajo-Final-Integrador-I\Negocio\bin\Debug\net6.0\Negocio.deps.json
+C:\C#\Trabajo-Final-Integrador-I\Negocio\bin\Debug\net6.0\Negocio.dll
+C:\C#\Trabajo-Final-Integrador-I\Negocio\bin\Debug\net6.0\Negocio.pdb
+C:\C#\Trabajo-Final-Integrador-I\Negocio\obj\Debug\net6.0\Negocio.csproj.AssemblyReference.cache
+C:\C#\Trabajo-Final-Integrador-I\Negocio\obj\Debug\net6.0\Negocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\C#\Trabajo-Final-Integrador-I\Negocio\obj\Debug\net6.0\Negocio.AssemblyInfoInputs.cache
+C:\C#\Trabajo-Final-Integrador-I\Negocio\obj\Debug\net6.0\Negocio.AssemblyInfo.cs
+C:\C#\Trabajo-Final-Integrador-I\Negocio\obj\Debug\net6.0\Negocio.csproj.CoreCompileInputs.cache
+C:\C#\Trabajo-Final-Integrador-I\Negocio\obj\Debug\net6.0\Negocio.sourcelink.json
+C:\C#\Trabajo-Final-Integrador-I\Negocio\obj\Debug\net6.0\Negocio.dll
+C:\C#\Trabajo-Final-Integrador-I\Negocio\obj\Debug\net6.0\refint\Negocio.dll
+C:\C#\Trabajo-Final-Integrador-I\Negocio\obj\Debug\net6.0\Negocio.pdb
+C:\C#\Trabajo-Final-Integrador-I\Negocio\obj\Debug\net6.0\ref\Negocio.dll

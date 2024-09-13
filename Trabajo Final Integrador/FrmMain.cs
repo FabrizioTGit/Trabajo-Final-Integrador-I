@@ -5,7 +5,7 @@ namespace Trabajo_Final_Integrador
 {
     public partial class FrmMain : Form
     {
-        ApiProducts apiProducts = new();
+        public static List<ApiProducts>? Products { get; set; }
         public FrmMain()
         {
             InitializeComponent();
@@ -14,13 +14,13 @@ namespace Trabajo_Final_Integrador
         private void FrmMain_Load(object sender, EventArgs e)
         {
             // Asignamos la api a utilizar al metodo para obtener los productos
-            apiProducts.Products = ConnecectionApi.GetProducts("https://fakestoreapi.com");
+            Products = ConnecectionApi.GetProducts("https://fakestoreapi.com");
 
             // Asignamos la lista de productos con sus atributos
-            dataGridView.DataSource = apiProducts.Products;
+            dataGridView.DataSource = Products;
 
             // Creamos la variable categories para poder agregar All para filtrar todos las categorias
-            var categories = apiProducts.Products.Select(p => p.Category).Distinct().ToList();
+            var categories = Products.Select(p => p.Category).Distinct().ToList();
             categories.Insert(0, "All");
             cmbBoxCategory.DataSource = categories;
 
@@ -36,11 +36,11 @@ namespace Trabajo_Final_Integrador
             // Verificamos si la categoria seleccionada es All
             if (selectedCategory == "All")
             {
-                dataGridView.DataSource = apiProducts.Products;
+                dataGridView.DataSource = Products;
             }
             else
                 // Actualizamos el DataGridView con los productos filtrados
-                dataGridView.DataSource = apiProducts.Products.Where(p => p.Category == selectedCategory).ToList();
+                dataGridView.DataSource = Products.Where(p => p.Category == selectedCategory).ToList();
         }
 
         private void btnAscDesc_Click(object sender, EventArgs e)
@@ -51,26 +51,34 @@ namespace Trabajo_Final_Integrador
             if (btnAscDesc.Text == "Ascendente")
             {
                 if (selectedCategory != "All")
-                    dataGridView.DataSource = apiProducts.Products.Where(p => p.Category == selectedCategory).OrderBy(p => p.Title).ToList();
+                    dataGridView.DataSource = Products.Where(p => p.Category == selectedCategory).OrderBy(p => p.Title).ToList();
                 else
-                    dataGridView.DataSource = apiProducts.Products.OrderBy(p => p.Title).ToList();
+                    dataGridView.DataSource = Products.OrderBy(p => p.Title).ToList();
 
                 btnAscDesc.Text = "Descendente";
             }
             else
             {
                 if (selectedCategory != "All")
-                    dataGridView.DataSource = apiProducts.Products.Where(p => p.Category == selectedCategory).OrderByDescending(p => p.Title).ToList();
+                    dataGridView.DataSource = Products.Where(p => p.Category == selectedCategory).OrderByDescending(p => p.Title).ToList();
                 else
-                    dataGridView.DataSource = apiProducts.Products.OrderByDescending(p => p.Title).ToList();
-                
+                    dataGridView.DataSource = Products.OrderByDescending(p => p.Title).ToList();
+
                 btnAscDesc.Text = "Ascendente";
             }
+        }
 
-
-
-
-
+        private void btnAcctions_Click(object sender, EventArgs e)
+        {
+            using (FrmAcctions form = new FrmAcctions())
+            {
+                if (form.ShowDialog() == DialogResult.OK)
+                {
+                    // Actualiza el DataGridView con la lista de productos actualizada
+                    dataGridView.DataSource = null; // Restablece el DataSource
+                    dataGridView.DataSource = FrmMain.Products;
+                }
+            }
         }
     }
 }

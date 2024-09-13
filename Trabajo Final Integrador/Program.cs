@@ -12,8 +12,6 @@ namespace Trabajo_Final_Integrador
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new FrmMain());
-
-
         }
     }
 }
