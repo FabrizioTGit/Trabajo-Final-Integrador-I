@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "0LhRrrFsIRwwkjDKH47T3sOY1jcVXCTf8aOl5MDxas1VXp0NsfSyMQfMW28QY+9ObDol7CXKM/iWrUY0Ii7pJQ==",
+  "dgSpecHash": "m5ImUV5f1xg=",
   "success": true,
-  "projectFilePath": "C:\\Users\\LN\\Desktop\\TFI\\Trabajo-Final-Integrador-I\\Trabajo Final Integrador\\Vista.csproj",
+  "projectFilePath": "C:\\C#\\Trabajo-Final-Integrador-I\\Trabajo Final Integrador\\Vista.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\LN\\.nuget\\packages\\nlog\\5.3.3\\nlog.5.3.3.nupkg.sha512",
-    "C:\\Users\\LN\\.nuget\\packages\\restsharp\\112.0.0\\restsharp.112.0.0.nupkg.sha512"
+    "C:\\Users\\Administrator\\.nuget\\packages\\nlog\\5.3.3\\nlog.5.3.3.nupkg.sha512",
+    "C:\\Users\\Administrator\\.nuget\\packages\\restsharp\\112.0.0\\restsharp.112.0.0.nupkg.sha512"
   ],
   "logs": []
 }

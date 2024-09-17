@@ -84,7 +84,6 @@ C:\C#\Trabajo-Final-Integrador-I\Trabajo Final Integrador\bin\Debug\net6.0-windo
 C:\C#\Trabajo-Final-Integrador-I\Trabajo Final Integrador\bin\Debug\net6.0-windows\Datos.pdb
 C:\C#\Trabajo-Final-Integrador-I\Trabajo Final Integrador\bin\Debug\net6.0-windows\Negocio.pdb
 C:\C#\Trabajo-Final-Integrador-I\Trabajo Final Integrador\obj\Debug\net6.0-windows\Vista.csproj.AssemblyReference.cache
-C:\C#\Trabajo-Final-Integrador-I\Trabajo Final Integrador\obj\Debug\net6.0-windows\Trabajo_Final_Integrador.FrmAcctions.resources
 C:\C#\Trabajo-Final-Integrador-I\Trabajo Final Integrador\obj\Debug\net6.0-windows\Trabajo_Final_Integrador.FrmMain.resources
 C:\C#\Trabajo-Final-Integrador-I\Trabajo Final Integrador\obj\Debug\net6.0-windows\Vista.csproj.GenerateResource.cache
 C:\C#\Trabajo-Final-Integrador-I\Trabajo Final Integrador\obj\Debug\net6.0-windows\Vista.GeneratedMSBuildEditorConfig.editorconfig
@@ -123,3 +122,4 @@ C:\Users\LN\Desktop\TFI\Trabajo-Final-Integrador-I\Trabajo Final Integrador\obj\
 C:\Users\LN\Desktop\TFI\Trabajo-Final-Integrador-I\Trabajo Final Integrador\obj\Debug\net6.0-windows\Vista.genruntimeconfig.cache
 C:\Users\LN\Desktop\TFI\Trabajo-Final-Integrador-I\Trabajo Final Integrador\obj\Debug\net6.0-windows\ref\Vista.dll
 C:\Users\LN\Desktop\TFI\Trabajo-Final-Integrador-I\Trabajo Final Integrador\obj\Debug\net6.0-windows\Trabajo_Final_Integrador.FrmNew.resources
+C:\C#\Trabajo-Final-Integrador-I\Trabajo Final Integrador\obj\Debug\net6.0-windows\Trabajo_Final_Integrador.FrmNew.resources

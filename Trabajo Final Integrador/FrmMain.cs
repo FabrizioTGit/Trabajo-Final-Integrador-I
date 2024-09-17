@@ -85,5 +85,31 @@ namespace Trabajo_Final_Integrador
                 }
             }
         }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+
+
+        }
+
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            if (dataGridView.SelectedRows.Count > 0)
+            {
+                var selectedIds = new List<int>();
+                foreach (DataGridViewRow row in dataGridView.SelectedRows)
+                {
+                    int selectedId = Convert.ToInt32(row.Cells["Id"].Value);
+                    selectedIds.Add(selectedId);
+                }
+                Products.RemoveAll(item => selectedIds.Contains(item.Id));
+                dataGridView.DataSource = null; 
+                dataGridView.DataSource = Products; 
+            }
+            else
+            {
+                MessageBox.Show("Por favor, seleccione una fila.");
+            }
+        }
     }
 }

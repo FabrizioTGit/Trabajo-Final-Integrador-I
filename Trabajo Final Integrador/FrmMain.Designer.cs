@@ -28,21 +28,42 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             dataGridView = new DataGridView();
+            cntxMenuStripDelete = new ContextMenuStrip(components);
+            deleteToolStripMenuItem = new ToolStripMenuItem();
             cmbBoxCategory = new ComboBox();
             btnAscDesc = new Button();
             btnNew = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView).BeginInit();
+            cntxMenuStripDelete.SuspendLayout();
             SuspendLayout();
             // 
             // dataGridView
             // 
+            dataGridView.AllowUserToResizeColumns = false;
+            dataGridView.AllowUserToResizeRows = false;
             dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView.ContextMenuStrip = cntxMenuStripDelete;
             dataGridView.Location = new Point(22, 137);
             dataGridView.Name = "dataGridView";
             dataGridView.RowTemplate.Height = 25;
+            dataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView.Size = new Size(559, 268);
             dataGridView.TabIndex = 0;
+            // 
+            // cntxMenuStripDelete
+            // 
+            cntxMenuStripDelete.Items.AddRange(new ToolStripItem[] { deleteToolStripMenuItem });
+            cntxMenuStripDelete.Name = "cntxMenuStripDelete";
+            cntxMenuStripDelete.Size = new Size(108, 26);
+            // 
+            // deleteToolStripMenuItem
+            // 
+            deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            deleteToolStripMenuItem.Size = new Size(107, 22);
+            deleteToolStripMenuItem.Text = "Delete";
+            deleteToolStripMenuItem.Click += deleteToolStripMenuItem_Click;
             // 
             // cmbBoxCategory
             // 
@@ -86,6 +107,7 @@
             Text = "Trabajo Final Integrador";
             Load += FrmMain_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView).EndInit();
+            cntxMenuStripDelete.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -95,5 +117,7 @@
         private ComboBox cmbBoxCategory;
         private Button btnAscDesc;
         private Button btnNew;
+        private ContextMenuStrip cntxMenuStripDelete;
+        private ToolStripMenuItem deleteToolStripMenuItem;
     }
 }
