@@ -88,19 +88,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Administrator\\.nuget\\packages\\": {}
+    "C:\\Users\\LN\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\C#\\Trabajo-Final-Integrador-I\\Negocio\\Negocio.csproj",
+      "projectUniqueName": "C:\\Users\\LN\\Desktop\\TFI\\Trabajo-Final-Integrador-I\\Negocio\\Negocio.csproj",
       "projectName": "Negocio",
-      "projectPath": "C:\\C#\\Trabajo-Final-Integrador-I\\Negocio\\Negocio.csproj",
-      "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\C#\\Trabajo-Final-Integrador-I\\Negocio\\obj\\",
+      "projectPath": "C:\\Users\\LN\\Desktop\\TFI\\Trabajo-Final-Integrador-I\\Negocio\\Negocio.csproj",
+      "packagesPath": "C:\\Users\\LN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\LN\\Desktop\\TFI\\Trabajo-Final-Integrador-I\\Negocio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -108,7 +108,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -121,11 +120,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -157,7 +151,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
       }
     }
   }

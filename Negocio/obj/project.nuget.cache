@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "SVmPs/HGcI4=",
+  "dgSpecHash": "AzrmNHBTLtSgWU7/VXGgzvpgD/+5L737VFKqYNIgYcV0O9i6f8vKRlDn6LjLBv6OidpuI9Y/DAFKgp5HYdPJ5g==",
   "success": true,
-  "projectFilePath": "C:\\C#\\Trabajo-Final-Integrador-I\\Negocio\\Negocio.csproj",
+  "projectFilePath": "C:\\Users\\LN\\Desktop\\TFI\\Trabajo-Final-Integrador-I\\Negocio\\Negocio.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Administrator\\.nuget\\packages\\nlog\\5.3.3\\nlog.5.3.3.nupkg.sha512",
-    "C:\\Users\\Administrator\\.nuget\\packages\\restsharp\\112.0.0\\restsharp.112.0.0.nupkg.sha512"
+    "C:\\Users\\LN\\.nuget\\packages\\nlog\\5.3.3\\nlog.5.3.3.nupkg.sha512",
+    "C:\\Users\\LN\\.nuget\\packages\\restsharp\\112.0.0\\restsharp.112.0.0.nupkg.sha512"
   ],
   "logs": []
 }

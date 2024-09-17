@@ -70,7 +70,12 @@ namespace Trabajo_Final_Integrador
 
         private void btnAcctions_Click(object sender, EventArgs e)
         {
-            using (FrmAcctions form = new FrmAcctions())
+
+        }
+
+        private void btnNew_Click(object sender, EventArgs e)
+        {
+            using (FrmNew form = new FrmNew())
             {
                 if (form.ShowDialog() == DialogResult.OK)
                 {

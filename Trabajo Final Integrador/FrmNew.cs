@@ -1,21 +1,36 @@
 ﻿using Negocio;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace Trabajo_Final_Integrador
 {
-    public partial class FrmAcctions : Form
+    public partial class FrmNew : Form
     {
         int id = FrmMain.Products.Last().Id + 1;
         private ErrorProvider errorProvider = new ErrorProvider();
-
-        public FrmAcctions()
+        public FrmNew()
         {
             InitializeComponent();
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void btnCancel_Click(object sender, EventArgs e)
         {
-            pnlAdd.Visible = true;
-            txtBoxTitle.Visible = true;
+            txtBoxTitle.Text = string.Empty;
+            txtBoxCategory.Text = string.Empty;
+            txtBoxDescription.Text = string.Empty;
+            txtBoxPrice.Text = string.Empty;
+            this.Dispose();
+        }
+
+        private void FrmNew_Load(object sender, EventArgs e)
+        {
             txtBoxId.Text = id.ToString();
         }
 
@@ -67,42 +82,6 @@ namespace Trabajo_Final_Integrador
 
             this.DialogResult = DialogResult.OK; // Indica que se hizo una modificación
             this.Close();
-        }
-
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            pnlAdd.Visible = false;
-            txtBoxTitle.Visible = false;
-            txtBoxTitle.Text = string.Empty;
-            txtBoxCategory.Text = string.Empty;
-            txtBoxDescription.Text = string.Empty;
-            txtBoxPrice.Text = string.Empty;
-        }
-
-        private void txtBoxPrice_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            TextBox? textBox = sender as TextBox;
-
-            // Permite dígitos, la coma decimal y teclas de control como Backspace
-            if (!char.IsDigit(e.KeyChar) && e.KeyChar != ',' && !char.IsControl(e.KeyChar))
-            {
-                e.Handled = true; // Cancela el evento si no es un número, coma o tecla de control
-            }
-
-            // Permite solo una coma decimal y evita que sea la primera entrada
-            if (e.KeyChar == ',')
-            {
-                // Si la coma ya existe o es la primera entrada (posición 0) cancela el evento
-                if (textBox.Text.IndexOf(',') > -1 || textBox.SelectionStart == 0)
-                {
-                    e.Handled = true; // Cancela el evento
-                }
-            }
-        }
-
-        private void lblCategory_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
