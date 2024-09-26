@@ -5,24 +5,29 @@ namespace Trabajo_Final_Integrador
 {
     public partial class FrmMain : Form
     {
+        ConnecectionApi connecectionApi;
         public static List<ApiProducts>? Products { get; set; }
+        public List<string>? Categories { get; set; }
         public FrmMain()
         {
             InitializeComponent();
+            connecectionApi = new ConnecectionApi("https://fakestoreapi.com");
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
-            // Asignamos la api a utilizar al metodo para obtener los productos
-            Products = ConnecectionApi.GetProducts("https://fakestoreapi.com");
+            // Asignamos la api a utilizar al metodo para obtener los productos            
+            Products = connecectionApi.GetProducts();
+            Categories = connecectionApi.GetCategories();
 
             // Asignamos la lista de productos con sus atributos
             dataGridView.DataSource = Products;
 
             // Creamos la variable categories para poder agregar All para filtrar todos las categorias
-            var categories = Products.Select(p => p.Category).Distinct().ToList();
-            categories.Insert(0, "All");
-            cmbBoxCategory.DataSource = categories;
+            Categories = connecectionApi.GetCategories();
+            Categories.Insert(0, "All");
+
+            cmbBoxCategory.DataSource = Categories;
 
             // Asignamos el elemento seleccionado para que sea All
             cmbBoxCategory.SelectedIndex = 0;
@@ -40,14 +45,13 @@ namespace Trabajo_Final_Integrador
             }
             else
                 // Actualizamos el DataGridView con los productos filtrados
-                dataGridView.DataSource = Products.Where(p => p.Category == selectedCategory).ToList();
+                dataGridView.DataSource = Products.Where(p => p.Category != null && p.Category.Equals(selectedCategory)).ToList();
         }
 
         private void btnAscDesc_Click(object sender, EventArgs e)
         {
-            string? selectedCategory = cmbBoxCategory.SelectedItem.ToString();
-
-
+            string? selectedCategory = cmbBoxCategory.SelectedItem.ToString();            
+            
             if (btnAscDesc.Text == "Ascendente")
             {
                 if (selectedCategory != "All")
