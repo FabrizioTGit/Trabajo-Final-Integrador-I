@@ -26,5 +26,18 @@ namespace Datos
             Categories = client.Get<List<string>>(request);
             return Categories;
         }
+        public List<ApiProducts>? PostProducts(List<ApiProducts> listProductsToUpdate, ApiProducts newProduct)
+        {
+            var request = new RestRequest("products", Method.Post);
+
+            if (listProductsToUpdate == null)
+            {
+                listProductsToUpdate = new List<ApiProducts>();
+            }
+                        
+            listProductsToUpdate.Add(newProduct);
+
+            return listProductsToUpdate;
+        }
     }
 }

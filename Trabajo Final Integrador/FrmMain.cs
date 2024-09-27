@@ -6,7 +6,8 @@ namespace Trabajo_Final_Integrador
     public partial class FrmMain : Form
     {
         ConnecectionApi connecectionApi;
-        public static List<ApiProducts>? Products { get; set; }
+        public List<ApiProducts>? Products { get; set; }
+
         public List<string>? Categories { get; set; }
         public FrmMain()
         {
@@ -79,13 +80,14 @@ namespace Trabajo_Final_Integrador
 
         private void btnNew_Click(object sender, EventArgs e)
         {
-            using (FrmNew form = new FrmNew())
+            using (FrmNew form = new FrmNew(this.Products))
             {
                 if (form.ShowDialog() == DialogResult.OK)
-                {
-                    // Actualiza el DataGridView con la lista de productos actualizada
-                    dataGridView.DataSource = null; // Restablece el DataSource
-                    dataGridView.DataSource = FrmMain.Products;
+                {                    
+                    this.Products = form.newProducts;
+
+                    dataGridView.DataSource = null;
+                    dataGridView.DataSource = this.Products;
                 }
             }
         }
