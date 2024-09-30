@@ -15,7 +15,7 @@ namespace Trabajo_Final_Integrador
     public partial class FrmNew : Form
     {
 
-        private ErrorProvider errorProvider = new ErrorProvider();        
+        private ErrorProvider _errorProvider = new ErrorProvider();        
         public List<ApiProducts> newProducts { get; private set; }
 
         public FrmNew(List<ApiProducts> existingProducts)
@@ -62,7 +62,7 @@ namespace Trabajo_Final_Integrador
 
             MessageBox.Show("Producto agregado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            this.DialogResult = DialogResult.OK; // Indica que se hizo una modificación
+            this.DialogResult = DialogResult.OK; 
             this.Close();
         }
 
@@ -72,22 +72,22 @@ namespace Trabajo_Final_Integrador
 
             if (string.IsNullOrWhiteSpace(txtBoxTitle.Text))
             {
-                errorProvider.SetError(txtBoxTitle, "El campo Title es obligatorio.");
+                _errorProvider.SetError(txtBoxTitle, "El campo Title es obligatorio.");
                 isValid = false;
             }
             else
             {
-                errorProvider.SetError(txtBoxTitle, string.Empty); // Elimina el error si es válido
+                _errorProvider.SetError(txtBoxTitle, string.Empty); 
             }
 
             if (string.IsNullOrWhiteSpace(txtBoxPrice.Text) || !decimal.TryParse(txtBoxPrice.Text, out decimal price) || price <= 0)
             {
-                errorProvider.SetError(txtBoxPrice, "El campo Price debe ser un número válido mayor que cero.");
+                _errorProvider.SetError(txtBoxPrice, "El campo Price debe ser un número válido mayor que cero.");
                 isValid = false;
             }
             else
             {
-                errorProvider.SetError(txtBoxPrice, string.Empty); // Elimina el error si es válido
+                _errorProvider.SetError(txtBoxPrice, string.Empty); 
             }
 
             return isValid;

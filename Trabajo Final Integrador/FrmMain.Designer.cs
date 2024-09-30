@@ -47,10 +47,12 @@
             dataGridView.ContextMenuStrip = cntxMenuStripDelete;
             dataGridView.Location = new Point(22, 137);
             dataGridView.Name = "dataGridView";
+            dataGridView.ReadOnly = true;
             dataGridView.RowTemplate.Height = 25;
             dataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView.Size = new Size(559, 268);
             dataGridView.TabIndex = 0;
+            dataGridView.CellDoubleClick += dataGridView_CellDoubleClick;
             // 
             // cntxMenuStripDelete
             // 

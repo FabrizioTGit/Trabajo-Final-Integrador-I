@@ -167,8 +167,9 @@
             Controls.Add(txtBoxDescription);
             Controls.Add(txtBoxPrice);
             Controls.Add(txtBoxTitle);
+            MaximizeBox = false;
             Name = "FrmNew";
-            Text = "FrmNew";
+            Text = "Agregar Producto";
             Load += FrmNew_Load;
             ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
             ResumeLayout(false);

@@ -1,5 +1,6 @@
 using Datos;
 using Negocio;
+using System.Windows.Forms;
 
 namespace Trabajo_Final_Integrador
 {
@@ -51,8 +52,8 @@ namespace Trabajo_Final_Integrador
 
         private void btnAscDesc_Click(object sender, EventArgs e)
         {
-            string? selectedCategory = cmbBoxCategory.SelectedItem.ToString();            
-            
+            string? selectedCategory = cmbBoxCategory.SelectedItem.ToString();
+
             if (btnAscDesc.Text == "Ascendente")
             {
                 if (selectedCategory != "All")
@@ -83,7 +84,7 @@ namespace Trabajo_Final_Integrador
             using (FrmNew form = new FrmNew(this.Products))
             {
                 if (form.ShowDialog() == DialogResult.OK)
-                {                    
+                {
                     this.Products = form.newProducts;
 
                     dataGridView.DataSource = null;
@@ -108,13 +109,37 @@ namespace Trabajo_Final_Integrador
                     int selectedId = Convert.ToInt32(row.Cells["Id"].Value);
                     selectedIds.Add(selectedId);
                 }
-                Products.RemoveAll(item => selectedIds.Contains(item.Id));
-                dataGridView.DataSource = null; 
-                dataGridView.DataSource = Products; 
+                dataGridView.DataSource = null;
+                dataGridView.DataSource = connecectionApi.DeleteProducts(Products, selectedIds);
             }
             else
             {
                 MessageBox.Show("Por favor, seleccione una fila.");
+            }
+        }
+
+        private void dataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            //var selectedProduct = Products[e.RowIndex];
+            //FrmEdit frmEdit = new FrmEdit(selectedProduct, Products);
+
+            //frmEdit.ShowDialog();
+
+            //dataGridView.DataSource = null; 
+            //dataGridView.DataSource = Products;
+
+            //dataGridView.Refresh();
+
+            var selectedProduct = Products[e.RowIndex];
+            using (FrmEdit form = new FrmEdit(selectedProduct, this.Products))
+            {
+                if (form.ShowDialog() == DialogResult.OK)
+                {
+                    this.Products = form.EditedProducts;                    
+                    dataGridView.DataSource = null;
+                    dataGridView.DataSource = this.Products;
+                    dataGridView.Refresh();
+                }
             }
         }
     }
