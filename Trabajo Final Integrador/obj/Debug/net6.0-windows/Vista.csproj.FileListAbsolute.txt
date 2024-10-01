@@ -124,3 +124,4 @@ C:\Users\LN\Desktop\TFI\Trabajo-Final-Integrador-I\Trabajo Final Integrador\obj\
 C:\Users\LN\Desktop\TFI\Trabajo-Final-Integrador-I\Trabajo Final Integrador\obj\Debug\net6.0-windows\Trabajo_Final_Integrador.FrmNew.resources
 C:\C#\Trabajo-Final-Integrador-I\Trabajo Final Integrador\obj\Debug\net6.0-windows\Trabajo_Final_Integrador.FrmNew.resources
 C:\C#\Trabajo-Final-Integrador-I\Trabajo Final Integrador\obj\Debug\net6.0-windows\Trabajo_Final_Integrador.FrmEdit.resources
+C:\C#\Trabajo-Final-Integrador-I\Trabajo Final Integrador\bin\Debug\net6.0-windows\Newtonsoft.Json.dll

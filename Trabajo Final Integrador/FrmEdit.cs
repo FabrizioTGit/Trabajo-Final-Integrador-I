@@ -38,8 +38,7 @@ namespace Trabajo_Final_Integrador
             }
 
             var updatedProduct = GetUpdatedProductFromFields();
-
-            EditedProducts = _connecectionApi.PutProducts(EditedProducts, updatedProduct);
+            MessageBox.Show(_connecectionApi.PutProducts(EditedProducts, updatedProduct));
             this.Close();
         }
 
@@ -93,7 +92,7 @@ namespace Trabajo_Final_Integrador
 
         private void btnCancelEdit_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Dispose();
         }
     }
 

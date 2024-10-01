@@ -15,7 +15,7 @@ namespace Trabajo_Final_Integrador
     public partial class FrmNew : Form
     {
 
-        private ErrorProvider _errorProvider = new ErrorProvider();        
+        private ErrorProvider _errorProvider = new ErrorProvider();
         public List<ApiProducts> newProducts { get; private set; }
 
         public FrmNew(List<ApiProducts> existingProducts)
@@ -58,12 +58,12 @@ namespace Trabajo_Final_Integrador
                 Category = txtBoxCategory.Text
             };
 
-            newProducts = connecectionApi.PostProducts(newProducts, product);
+            
 
-            MessageBox.Show("Producto agregado exitosamente.", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(connecectionApi.PostProducts(newProducts, product));
 
-            this.DialogResult = DialogResult.OK; 
-            this.Close();
+            this.DialogResult = DialogResult.OK;
+            this.Dispose();
         }
 
         private bool ValidateFields()
@@ -77,7 +77,7 @@ namespace Trabajo_Final_Integrador
             }
             else
             {
-                _errorProvider.SetError(txtBoxTitle, string.Empty); 
+                _errorProvider.SetError(txtBoxTitle, string.Empty);
             }
 
             if (string.IsNullOrWhiteSpace(txtBoxPrice.Text) || !decimal.TryParse(txtBoxPrice.Text, out decimal price) || price <= 0)
@@ -87,7 +87,7 @@ namespace Trabajo_Final_Integrador
             }
             else
             {
-                _errorProvider.SetError(txtBoxPrice, string.Empty); 
+                _errorProvider.SetError(txtBoxPrice, string.Empty);
             }
 
             return isValid;

@@ -7,47 +7,42 @@ namespace Trabajo_Final_Integrador
     public partial class FrmMain : Form
     {
         ConnecectionApi connecectionApi;
-        public List<ApiProducts>? Products { get; set; }
-
-        public List<string>? Categories { get; set; }
+        public List<ApiProducts> Products;
+        public List<string>? Categories;
         public FrmMain()
         {
             InitializeComponent();
+            Products = new List<ApiProducts>();
+            Categories = new List<string>();
             connecectionApi = new ConnecectionApi("https://fakestoreapi.com");
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
         {
-            // Asignamos la api a utilizar al metodo para obtener los productos            
-            Products = connecectionApi.GetProducts();
-            Categories = connecectionApi.GetCategories();
-
-            // Asignamos la lista de productos con sus atributos
+            MessageBox.Show(connecectionApi.GetProducts(Products));
+            connecectionApi.GetCategories(Categories);
+                        
             dataGridView.DataSource = Products;
 
-            // Creamos la variable categories para poder agregar All para filtrar todos las categorias
-            Categories = connecectionApi.GetCategories();
             Categories.Insert(0, "All");
 
             cmbBoxCategory.DataSource = Categories;
-
-            // Asignamos el elemento seleccionado para que sea All
+                        
             cmbBoxCategory.SelectedIndex = 0;
         }
 
         private void cmbBoxCategory_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            // Le asignamos a una variable la categoria seleccionada en el ComboBox
+        {            
             string? selectedCategory = cmbBoxCategory.SelectedItem.ToString();
-
-            // Verificamos si la categoria seleccionada es All
+                        
             if (selectedCategory == "All")
             {
                 dataGridView.DataSource = Products;
             }
             else
-                // Actualizamos el DataGridView con los productos filtrados
+            {
                 dataGridView.DataSource = Products.Where(p => p.Category != null && p.Category.Equals(selectedCategory)).ToList();
+            }                
         }
 
         private void btnAscDesc_Click(object sender, EventArgs e)
@@ -96,7 +91,6 @@ namespace Trabajo_Final_Integrador
         private void btnDelete_Click(object sender, EventArgs e)
         {
 
-
         }
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
@@ -109,8 +103,12 @@ namespace Trabajo_Final_Integrador
                     int selectedId = Convert.ToInt32(row.Cells["Id"].Value);
                     selectedIds.Add(selectedId);
                 }
-                dataGridView.DataSource = null;
-                dataGridView.DataSource = connecectionApi.DeleteProducts(Products, selectedIds);
+                                
+                string resultMessage = connecectionApi.DeleteProducts(Products, selectedIds);
+                MessageBox.Show(resultMessage);
+                                                
+                dataGridView.DataSource = null; 
+                dataGridView.DataSource = Products;
             }
             else
             {
@@ -120,24 +118,11 @@ namespace Trabajo_Final_Integrador
 
         private void dataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            //var selectedProduct = Products[e.RowIndex];
-            //FrmEdit frmEdit = new FrmEdit(selectedProduct, Products);
-
-            //frmEdit.ShowDialog();
-
-            //dataGridView.DataSource = null; 
-            //dataGridView.DataSource = Products;
-
-            //dataGridView.Refresh();
-
             var selectedProduct = Products[e.RowIndex];
             using (FrmEdit form = new FrmEdit(selectedProduct, this.Products))
             {
                 if (form.ShowDialog() == DialogResult.OK)
                 {
-                    this.Products = form.EditedProducts;                    
-                    dataGridView.DataSource = null;
-                    dataGridView.DataSource = this.Products;
                     dataGridView.Refresh();
                 }
             }

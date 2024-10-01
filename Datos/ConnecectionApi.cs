@@ -1,6 +1,7 @@
 ﻿using Negocio;
+using Newtonsoft.Json;
 using RestSharp;
-using System;
+using System.Net;
 
 namespace Datos
 {
@@ -14,54 +15,101 @@ namespace Datos
             client = new RestClient(url);
         }
 
-        public List<ApiProducts>? GetProducts()
+        public string GetProducts(List<ApiProducts> listProductsToUpdate)
         {
             var request = new RestRequest("products", Method.Get);
-            List<ApiProducts>? products = client.Get<List<ApiProducts>>(request);
-            return products;
+
+            var response = client.Get(request);
+
+            if (response.StatusCode == HttpStatusCode.OK)
+            {
+                var products = JsonConvert.DeserializeObject<List<ApiProducts>>(response.Content);
+
+                listProductsToUpdate.Clear();
+                listProductsToUpdate.AddRange(products);
+                return "Productos cargados correctamente";
+            }
+            else
+            {
+                return "Error al obtener los productos";
+            }
         }
-        public List<string>? GetCategories()
+
+        public string GetCategories(List<string> listCategoriesToUpdate)
         {
             var request = new RestRequest("products/categories", Method.Get);
-            Categories = client.Get<List<string>>(request);
-            return Categories;
+
+            var response = client.Get(request);
+
+            if (response.StatusCode == HttpStatusCode.OK)
+            {
+                var categories = JsonConvert.DeserializeObject<List<string>>(response.Content);
+
+                listCategoriesToUpdate.Clear();
+                listCategoriesToUpdate.AddRange(categories);
+                return "Categorías obtenidas correctamente";
+            }
+            else
+            {
+                return "Error al obtener las categorías";
+            }
         }
-        public List<ApiProducts>? PostProducts(List<ApiProducts> listProductsToUpdate, ApiProducts newProduct)
+        public string PostProducts(List<ApiProducts> listProductsToUpdate, ApiProducts newProduct)
         {
             var request = new RestRequest("products", Method.Post);
 
-            if (listProductsToUpdate == null)
+            request.AddJsonBody(newProduct);
+
+            var response = client.Post(request);
+
+            if (response.StatusCode == HttpStatusCode.OK)
             {
-                listProductsToUpdate = new List<ApiProducts>();
+                listProductsToUpdate.Add(newProduct);
+                return "Producto agregado correctamente";
             }
-
-            listProductsToUpdate.Add(newProduct);
-
-            return listProductsToUpdate;
+            else
+            {
+                return "No se pudo agregar el producto";
+            }
         }
-        public List<ApiProducts>? DeleteProducts(List<ApiProducts> listProductsToUpdate, List<int> listIds)
+
+        public string DeleteProducts(List<ApiProducts> listProductsToUpdate, List<int> listIds)
         {
             foreach (int productId in listIds)
             {
                 var request = new RestRequest($"products/{productId}", Method.Delete);
-                ApiProducts? response = client.Delete<ApiProducts>(request);
-            }
-            listProductsToUpdate.RemoveAll(item => listIds.Contains(item.Id));
-            
-            return listProductsToUpdate;
+
+                var response = client.Delete(request); 
+
+                if (response.StatusCode == HttpStatusCode.OK)
+                {
+                    listProductsToUpdate.RemoveAll(item => listIds.Contains(item.Id));
+
+                    return "Productos eliminados correctamente.";
+                }
+            }            
+            return "Error al eliminar el producto";
         }
-        public List<ApiProducts>? PutProducts(List<ApiProducts> ListProductsToUpdate, ApiProducts productToEdit)
+        public string PutProducts(List<ApiProducts> ListProductsToUpdate, ApiProducts productToEdit)
         {
-            var request = new RestRequest($"products/{productToEdit}", Method.Put);
+            var request = new RestRequest($"products/{productToEdit.Id}", Method.Put);
 
-            //ApiProducts? response = client.Put<ApiProducts>(request);
+            request.AddJsonBody(productToEdit);
 
-            var product = ListProductsToUpdate.Where(item => item.Id == productToEdit.Id).First();
+            var response = client.Put(request);
 
-            ListProductsToUpdate.Remove(product);
-            ListProductsToUpdate.Add(productToEdit);
+            if (response.StatusCode == HttpStatusCode.OK)
+            {
+                var product = ListProductsToUpdate.Where(item => item.Id == productToEdit.Id).First();
 
-            return ListProductsToUpdate;
+                product.Title = productToEdit.Title;
+                product.Description = productToEdit.Description;
+                product.Category = productToEdit.Category;
+                product.Price = productToEdit.Price;
+
+                return "Producto actualizado correctamente";
+            }
+            return "No se pudo actualizar";
         }
     }
 }
