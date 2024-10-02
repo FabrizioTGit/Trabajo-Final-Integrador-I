@@ -47,25 +47,28 @@ namespace Trabajo_Final_Integrador
 
         private void btnAscDesc_Click(object sender, EventArgs e)
         {
-            string? selectedCategory = cmbBoxCategory.SelectedItem.ToString();
+            string? selectedCategory = cmbBoxCategory.SelectedItem?.ToString();
 
-            if (btnAscDesc.Text == "Ascendente")
+            if (selectedCategory != "All")
             {
-                if (selectedCategory != "All")
-                    dataGridView.DataSource = Products.Where(p => p.Category == selectedCategory).OrderBy(p => p.Title).ToList();
-                else
-                    dataGridView.DataSource = Products.OrderBy(p => p.Title).ToList();
-
-                btnAscDesc.Text = "Descendente";
+                connecectionApi.SortResults(Products, btnAscDesc.Text);
+                dataGridView.DataSource = null;
+                dataGridView.DataSource = Products.Where(p => p.Category != null && p.Category.Equals(selectedCategory)).ToList();
             }
             else
             {
-                if (selectedCategory != "All")
-                    dataGridView.DataSource = Products.Where(p => p.Category == selectedCategory).OrderByDescending(p => p.Title).ToList();
-                else
-                    dataGridView.DataSource = Products.OrderByDescending(p => p.Title).ToList();
-
+                connecectionApi.SortResults(Products, btnAscDesc.Text);
+                dataGridView.DataSource = null;
+                dataGridView.DataSource = Products;
+            }
+                        
+            if (btnAscDesc.Text == "Descendente")
+            {
                 btnAscDesc.Text = "Ascendente";
+            }
+            else
+            {
+                btnAscDesc.Text = "Descendente";
             }
         }
 
@@ -118,7 +121,11 @@ namespace Trabajo_Final_Integrador
 
         private void dataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            var selectedProduct = Products[e.RowIndex];
+            if (e.RowIndex < 0) return; 
+                        
+            var filteredProducts = (List<ApiProducts>)dataGridView.DataSource;
+            var selectedProduct = filteredProducts[e.RowIndex];
+
             using (FrmEdit form = new FrmEdit(selectedProduct, this.Products))
             {
                 if (form.ShowDialog() == DialogResult.OK)

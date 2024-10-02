@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\C#\\Trabajo-Final-Integrador-I\\Datos\\Datos.csproj": {}
+    "C:\\Users\\Administrator\\Desktop\\Trabajo-Final-Integrador-I\\Datos\\Datos.csproj": {}
   },
   "projects": {
-    "C:\\C#\\Trabajo-Final-Integrador-I\\Datos\\Datos.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\Trabajo-Final-Integrador-I\\Datos\\Datos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\C#\\Trabajo-Final-Integrador-I\\Datos\\Datos.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Trabajo-Final-Integrador-I\\Datos\\Datos.csproj",
         "projectName": "Datos",
-        "projectPath": "C:\\C#\\Trabajo-Final-Integrador-I\\Datos\\Datos.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\Trabajo-Final-Integrador-I\\Datos\\Datos.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\C#\\Trabajo-Final-Integrador-I\\Datos\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\Trabajo-Final-Integrador-I\\Datos\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -29,8 +29,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\C#\\Trabajo-Final-Integrador-I\\Negocio\\Negocio.csproj": {
-                "projectPath": "C:\\C#\\Trabajo-Final-Integrador-I\\Negocio\\Negocio.csproj"
+              "C:\\Users\\Administrator\\Desktop\\Trabajo-Final-Integrador-I\\Negocio\\Negocio.csproj": {
+                "projectPath": "C:\\Users\\Administrator\\Desktop\\Trabajo-Final-Integrador-I\\Negocio\\Negocio.csproj"
               }
             }
           }
@@ -83,14 +83,14 @@
         }
       }
     },
-    "C:\\C#\\Trabajo-Final-Integrador-I\\Negocio\\Negocio.csproj": {
+    "C:\\Users\\Administrator\\Desktop\\Trabajo-Final-Integrador-I\\Negocio\\Negocio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\C#\\Trabajo-Final-Integrador-I\\Negocio\\Negocio.csproj",
+        "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\Trabajo-Final-Integrador-I\\Negocio\\Negocio.csproj",
         "projectName": "Negocio",
-        "projectPath": "C:\\C#\\Trabajo-Final-Integrador-I\\Negocio\\Negocio.csproj",
+        "projectPath": "C:\\Users\\Administrator\\Desktop\\Trabajo-Final-Integrador-I\\Negocio\\Negocio.csproj",
         "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-        "outputPath": "C:\\C#\\Trabajo-Final-Integrador-I\\Negocio\\obj\\",
+        "outputPath": "C:\\Users\\Administrator\\Desktop\\Trabajo-Final-Integrador-I\\Negocio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",

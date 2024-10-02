@@ -54,6 +54,24 @@ namespace Datos
                 return "Error al obtener las categorías";
             }
         }
+        public void SortResults(List<ApiProducts> listProductsToUpdate, string order)
+        {
+            var request = new RestRequest("products/products?sort=desc", Method.Get);
+
+            var response = client.Get(request);
+
+            if(response.StatusCode == HttpStatusCode.OK)
+            {
+                if (order == "Ascendente")
+                {
+                    listProductsToUpdate.Sort((p1, p2) => p1.Id.CompareTo(p2.Id)); 
+                }
+                else
+                {
+                    listProductsToUpdate.Sort((p1, p2) => p2.Id.CompareTo(p1.Id)); 
+                }
+            }
+        }
         public string PostProducts(List<ApiProducts> listProductsToUpdate, ApiProducts newProduct)
         {
             var request = new RestRequest("products", Method.Post);

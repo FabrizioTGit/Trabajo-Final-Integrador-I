@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EBQQeNjzlxk=",
+  "dgSpecHash": "ReamG1AjG1E=",
   "success": true,
-  "projectFilePath": "C:\\C#\\Trabajo-Final-Integrador-I\\Negocio\\Negocio.csproj",
+  "projectFilePath": "C:\\Users\\Administrator\\Desktop\\Trabajo-Final-Integrador-I\\Negocio\\Negocio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Administrator\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
     "C:\\Users\\Administrator\\.nuget\\packages\\nlog\\5.3.3\\nlog.5.3.3.nupkg.sha512",
