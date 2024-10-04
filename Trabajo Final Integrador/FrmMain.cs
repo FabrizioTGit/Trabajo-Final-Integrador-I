@@ -1,6 +1,6 @@
 using Datos;
 using Negocio;
-using System.Windows.Forms;
+using System.Collections.Generic;
 
 namespace Trabajo_Final_Integrador
 {
@@ -9,6 +9,7 @@ namespace Trabajo_Final_Integrador
         ConnecectionApi connecectionApi;
         public List<ApiProducts> Products;
         public List<string>? Categories;
+        public List<ApiProducts>? FilteredProducts;
         public FrmMain()
         {
             InitializeComponent();
@@ -20,30 +21,51 @@ namespace Trabajo_Final_Integrador
         private void FrmMain_Load(object sender, EventArgs e)
         {
             MessageBox.Show(connecectionApi.GetProducts(Products));
+            FilteredProducts = new List<ApiProducts>(Products);
             connecectionApi.GetCategories(Categories);
-                        
+
             dataGridView.DataSource = Products;
 
             Categories.Insert(0, "All");
 
             cmbBoxCategory.DataSource = Categories;
-                        
+
             cmbBoxCategory.SelectedIndex = 0;
         }
 
         private void cmbBoxCategory_SelectedIndexChanged(object sender, EventArgs e)
-        {            
+        {
             string? selectedCategory = cmbBoxCategory.SelectedItem.ToString();
-                        
-            if (selectedCategory == "All")
+
+            FilteredProducts = new List<ApiProducts>(Products);
+
+            if (int.TryParse(txtBoxLimit.Text, out int limit) && limit > 0)
             {
-                dataGridView.DataSource = Products;
+                if (selectedCategory == "All")
+                {
+                    connecectionApi.LimitResult(Products, limit);
+                }
+                else
+                {
+                    connecectionApi.GetInCategory(FilteredProducts, selectedCategory);
+                    connecectionApi.LimitResult(FilteredProducts, limit);
+                }
             }
             else
             {
-                dataGridView.DataSource = Products.Where(p => p.Category != null && p.Category.Equals(selectedCategory)).ToList();
-            }                
+                if (selectedCategory == "All")
+                {
+                    dataGridView.DataSource = Products;
+                }
+                else
+                {
+                    connecectionApi.GetInCategory(FilteredProducts, selectedCategory);
+                }
+            }
+            dataGridView.DataSource = null;
+            dataGridView.DataSource = FilteredProducts;
         }
+
 
         private void btnAscDesc_Click(object sender, EventArgs e)
         {
@@ -53,7 +75,9 @@ namespace Trabajo_Final_Integrador
             {
                 connecectionApi.SortResults(Products, btnAscDesc.Text);
                 dataGridView.DataSource = null;
-                dataGridView.DataSource = Products.Where(p => p.Category != null && p.Category.Equals(selectedCategory)).ToList();
+                dataGridView.DataSource = Products
+                    .Where(p => p.Category != null && p.Category.Equals(selectedCategory))
+                    .ToList();
             }
             else
             {
@@ -61,7 +85,7 @@ namespace Trabajo_Final_Integrador
                 dataGridView.DataSource = null;
                 dataGridView.DataSource = Products;
             }
-                        
+
             if (btnAscDesc.Text == "Descendente")
             {
                 btnAscDesc.Text = "Ascendente";
@@ -106,11 +130,11 @@ namespace Trabajo_Final_Integrador
                     int selectedId = Convert.ToInt32(row.Cells["Id"].Value);
                     selectedIds.Add(selectedId);
                 }
-                                
+
                 string resultMessage = connecectionApi.DeleteProducts(Products, selectedIds);
                 MessageBox.Show(resultMessage);
-                                                
-                dataGridView.DataSource = null; 
+
+                dataGridView.DataSource = null;
                 dataGridView.DataSource = Products;
             }
             else
@@ -121,8 +145,8 @@ namespace Trabajo_Final_Integrador
 
         private void dataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex < 0) return; 
-                        
+            if (e.RowIndex < 0) return;
+
             var filteredProducts = (List<ApiProducts>)dataGridView.DataSource;
             var selectedProduct = filteredProducts[e.RowIndex];
 
@@ -131,6 +155,76 @@ namespace Trabajo_Final_Integrador
                 if (form.ShowDialog() == DialogResult.OK)
                 {
                     dataGridView.Refresh();
+                }
+            }
+        }
+
+        private void txtBoxSearch_TextChanged(object sender, EventArgs e)
+        {
+            // Capturamos la categoría seleccionada
+            string? selectedCategory = cmbBoxCategory.SelectedItem?.ToString();
+
+            // Validamos que el texto en txtBoxSearch sea un número válido
+            if (int.TryParse(txtBoxSearch.Text, out int filterId))
+            {
+                // Comprobamos si la lista esta filtrada
+                if (selectedCategory == "All")
+                {
+                    var product = connecectionApi.GetSingleProduct(Products, filterId);
+                    dataGridView.DataSource = new List<ApiProducts> { product };
+                }
+                else
+                {
+                    var product = connecectionApi.GetSingleProduct(FilteredProducts, filterId);
+                    dataGridView.DataSource = new List<ApiProducts> { product };
+                }
+            }
+            else
+            {
+                // Comprobamos si la lista esta filtrada
+                if (selectedCategory == "All")
+                {
+                    dataGridView.DataSource = null;
+                    dataGridView.DataSource = Products;
+                }
+                else
+                {
+                    dataGridView.DataSource = null;
+                    dataGridView.DataSource = FilteredProducts;
+                }
+            }
+        }
+
+
+
+        private void txtBoxLimit_TextChanged(object sender, EventArgs e)
+        {
+            string? selectedCategory = cmbBoxCategory.SelectedItem?.ToString();
+
+            if (int.TryParse(txtBoxLimit.Text, out int limit) && limit > 0)
+            {
+                if (selectedCategory == "All")
+                {
+                    var limitedList = connecectionApi.LimitResult(Products, limit);
+                    dataGridView.DataSource = null;
+                    dataGridView.DataSource = limitedList;
+                }
+                else
+                {
+                    var limitedList = connecectionApi.LimitResult(FilteredProducts, limit);
+                    dataGridView.DataSource = null;
+                    dataGridView.DataSource = limitedList;
+                }
+            }
+            else
+            {
+                if (selectedCategory == "All")
+                {
+                    dataGridView.DataSource = Products;
+                }
+                else
+                {
+                    dataGridView.DataSource = FilteredProducts;
                 }
             }
         }

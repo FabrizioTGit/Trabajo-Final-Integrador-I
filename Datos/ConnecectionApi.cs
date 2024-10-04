@@ -34,8 +34,15 @@ namespace Datos
                 return "Error al obtener los productos";
             }
         }
+        public ApiProducts? GetSingleProduct(List<ApiProducts> ListProductsToUpdate, int? id)
+        {
+            var request = new RestRequest($"products/{id}", Method.Get);
 
-        public string GetCategories(List<string> listCategoriesToUpdate)
+            var response = client.Get(request);
+
+            return ListProductsToUpdate.FirstOrDefault(p => p.Id == id);
+        }
+        public string GetCategories(List<string> ListCategoriesToUpdate)
         {
             var request = new RestRequest("products/categories", Method.Get);
 
@@ -45,8 +52,8 @@ namespace Datos
             {
                 var categories = JsonConvert.DeserializeObject<List<string>>(response.Content);
 
-                listCategoriesToUpdate.Clear();
-                listCategoriesToUpdate.AddRange(categories);
+                ListCategoriesToUpdate.Clear();
+                ListCategoriesToUpdate.AddRange(categories);
                 return "Categorías obtenidas correctamente";
             }
             else
@@ -54,21 +61,37 @@ namespace Datos
                 return "Error al obtener las categorías";
             }
         }
+        public void GetInCategory(List<ApiProducts> ListProductsToUpdate, string category)
+        {
+            var request = new RestRequest($"products/categories/{category}", Method.Get);
+
+            var response = client.Get(request);
+
+            ListProductsToUpdate.RemoveAll(p => p.Category != category);
+        }
+        public List<ApiProducts> LimitResult(List<ApiProducts> ListProductsToUpdate, int limitNumber)
+        {
+            var request = new RestRequest($"products?limit={limitNumber}", Method.Get);
+
+            var response = client.Get(request);
+
+            return ListProductsToUpdate.Take(limitNumber).ToList();
+        }
         public void SortResults(List<ApiProducts> listProductsToUpdate, string order)
         {
             var request = new RestRequest("products/products?sort=desc", Method.Get);
 
             var response = client.Get(request);
 
-            if(response.StatusCode == HttpStatusCode.OK)
+            if (response.StatusCode == HttpStatusCode.OK)
             {
                 if (order == "Ascendente")
                 {
-                    listProductsToUpdate.Sort((p1, p2) => p1.Id.CompareTo(p2.Id)); 
+                    listProductsToUpdate.Sort((p1, p2) => p1.Id.CompareTo(p2.Id));
                 }
                 else
                 {
-                    listProductsToUpdate.Sort((p1, p2) => p2.Id.CompareTo(p1.Id)); 
+                    listProductsToUpdate.Sort((p1, p2) => p2.Id.CompareTo(p1.Id));
                 }
             }
         }
@@ -97,7 +120,7 @@ namespace Datos
             {
                 var request = new RestRequest($"products/{productId}", Method.Delete);
 
-                var response = client.Delete(request); 
+                var response = client.Delete(request);
 
                 if (response.StatusCode == HttpStatusCode.OK)
                 {
@@ -105,7 +128,7 @@ namespace Datos
 
                     return "Productos eliminados correctamente.";
                 }
-            }            
+            }
             return "Error al eliminar el producto";
         }
         public string PutProducts(List<ApiProducts> ListProductsToUpdate, ApiProducts productToEdit)
