@@ -180,3 +180,15 @@ C:\Users\Administrator\Desktop\Trabajo-Final-Integrador-I\Trabajo Final Integrad
 C:\Users\Administrator\Desktop\Trabajo-Final-Integrador-I\Trabajo Final Integrador\obj\Debug\net6.0-windows\Vista.pdb
 C:\Users\Administrator\Desktop\Trabajo-Final-Integrador-I\Trabajo Final Integrador\obj\Debug\net6.0-windows\Vista.genruntimeconfig.cache
 C:\Users\Administrator\Desktop\Trabajo-Final-Integrador-I\Trabajo Final Integrador\obj\Debug\net6.0-windows\ref\Vista.dll
+C:\Users\Administrator\Desktop\Trabajo-Final-Integrador-I\Trabajo Final Integrador\bin\Debug\net6.0-windows\NLog.config
+C:\Users\Administrator\Desktop\Trabajo-Final-Integrador-I\Trabajo Final Integrador\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Administrator\Desktop\Trabajo-Final-Integrador-I\Trabajo Final Integrador\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Administrator\Desktop\Trabajo-Final-Integrador-I\Trabajo Final Integrador\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Administrator\Desktop\Trabajo-Final-Integrador-I\Trabajo Final Integrador\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\Administrator\Desktop\Trabajo-Final-Integrador-I\Trabajo Final Integrador\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Administrator\Desktop\Trabajo-Final-Integrador-I\Trabajo Final Integrador\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\Administrator\Desktop\Trabajo-Final-Integrador-I\Trabajo Final Integrador\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\Administrator\Desktop\Trabajo-Final-Integrador-I\Trabajo Final Integrador\bin\Debug\net6.0-windows\NLog.Extensions.Logging.dll
+C:\Users\Administrator\Desktop\Trabajo-Final-Integrador-I\Trabajo Final Integrador\bin\Debug\net6.0-windows\Vista.dll.config
+C:\Users\Administrator\Desktop\Trabajo-Final-Integrador-I\Trabajo Final Integrador\bin\Debug\net6.0-windows\System.Configuration.ConfigurationManager.dll
+C:\Users\Administrator\Desktop\Trabajo-Final-Integrador-I\Trabajo Final Integrador\bin\Debug\net6.0-windows\System.Security.Cryptography.ProtectedData.dll

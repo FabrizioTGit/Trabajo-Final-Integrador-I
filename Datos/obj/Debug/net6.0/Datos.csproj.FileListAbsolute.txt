@@ -76,3 +76,4 @@ C:\Users\Administrator\Desktop\Trabajo-Final-Integrador-I\Datos\obj\Debug\net6.0
 C:\Users\Administrator\Desktop\Trabajo-Final-Integrador-I\Datos\obj\Debug\net6.0\refint\Datos.dll
 C:\Users\Administrator\Desktop\Trabajo-Final-Integrador-I\Datos\obj\Debug\net6.0\Datos.pdb
 C:\Users\Administrator\Desktop\Trabajo-Final-Integrador-I\Datos\obj\Debug\net6.0\ref\Datos.dll
+C:\Users\Administrator\Desktop\Trabajo-Final-Integrador-I\Datos\bin\Debug\net6.0\NLog.config

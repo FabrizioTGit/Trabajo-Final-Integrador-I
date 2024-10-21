@@ -52,7 +52,11 @@
           "dependencies": {
             "NLog": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
+            },
+            "NLog.Extensions.Logging": {
+              "target": "Package",
+              "version": "[5.3.14, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -61,6 +65,10 @@
             "RestSharp": {
               "target": "Package",
               "version": "[112.0.0, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[8.0.1, )"
             }
           },
           "imports": [
@@ -79,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     },
@@ -127,7 +135,7 @@
           "dependencies": {
             "NLog": {
               "target": "Package",
-              "version": "[5.3.3, )"
+              "version": "[5.3.4, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",
@@ -136,6 +144,10 @@
             "RestSharp": {
               "target": "Package",
               "version": "[112.0.0, )"
+            },
+            "System.Configuration.ConfigurationManager": {
+              "target": "Package",
+              "version": "[8.0.1, )"
             }
           },
           "imports": [
@@ -154,7 +166,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Vista")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28f94e3e8fdb83fce17fc27813e5bc96638e042d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df216cec1883540870aacb85b475893ee152fa1c")]
 [assembly: System.Reflection.AssemblyProductAttribute("Vista")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Vista")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

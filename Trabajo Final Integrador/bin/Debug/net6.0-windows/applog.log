@@ -1,0 +1,62 @@
+2024-10-21 17:33:56.6270 INFO Productos obtenidos: 20 
+2024-10-21 17:33:56.6581 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-10-21 17:33:57.7125 INFO Llamada al metodo GetCategories. 
+2024-10-21 17:33:57.9688 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-10-21 17:34:00.1406 INFO Llamada al metodo DeleteProducts. 
+2024-10-21 17:34:00.5040 INFO Producto eliminado correctamente. 
+2024-10-21 17:34:44.3860 INFO Productos obtenidos: 20 
+2024-10-21 17:34:44.4136 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-10-21 17:34:45.9544 INFO Llamada al metodo GetCategories. 
+2024-10-21 17:34:46.2159 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-10-21 17:34:48.2719 INFO Llamada al metodo DeleteProducts. 
+2024-10-21 17:34:48.6273 INFO 3 producto/s eliminado correctamente. 
+2024-10-21 17:41:49.3008 INFO Productos obtenidos: 20 
+2024-10-21 17:41:49.3278 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-10-21 17:41:50.9779 INFO Llamada al metodo GetCategories. 
+2024-10-21 17:41:51.2511 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-10-21 17:42:13.3528 INFO Llamada al metodo PutProducts. 
+2024-10-21 17:42:13.6689 INFO Producto de ID: 20. Actualizado correctamente. 
+2024-10-21 17:42:20.9707 INFO Llamada al metodo PostProducts. 
+2024-10-21 17:42:21.2439 INFO Producto xd agregado correctamente. 
+2024-10-21 17:42:29.3337 INFO Llamada al metodo PutProducts. 
+2024-10-21 17:42:30.1035 INFO Producto de ID: 21. Actualizado correctamente. 
+2024-10-21 17:42:39.8594 INFO Productos obtenidos: 20 
+2024-10-21 17:42:39.8880 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-10-21 17:42:40.8473 INFO Llamada al metodo GetCategories. 
+2024-10-21 17:42:41.0992 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-10-21 17:44:43.7262 INFO Productos obtenidos: 20 
+2024-10-21 17:44:43.7550 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-10-21 17:44:45.3049 INFO Llamada al metodo GetCategories. 
+2024-10-21 17:44:45.5623 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-10-21 17:44:48.9724 INFO Llamada al metodo GetInCategory. 
+2024-10-21 17:44:49.2231 INFO Productos filtrados por categoria electronics. Total productos despues de filtrar: 6 
+2024-10-21 17:44:56.1200 INFO Llamada al metodo GetSingleProduct. 
+2024-10-21 17:44:56.3712 INFO Producto 2 filtrado correctamente. 
+2024-10-21 17:57:38.1909 INFO Productos obtenidos: 20 
+2024-10-21 17:57:38.2159 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-10-21 17:57:39.5533 INFO Llamada al metodo GetCategories. 
+2024-10-21 17:57:39.8092 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-10-21 17:57:45.0335 INFO Llamada al metodo PutProducts. 
+2024-10-21 17:57:45.8149 INFO Producto de ID: 3. Actualizado correctamente. 
+2024-10-21 17:57:49.1502 INFO Llamada al metodo GetInCategory. 
+2024-10-21 17:57:49.4044 INFO Productos filtrados por categoria electronics. Total productos despues de filtrar: 6 
+2024-10-21 17:57:52.4152 INFO Llamada al metodo GetInCategory. 
+2024-10-21 17:57:52.6897 INFO Productos filtrados por categoria jewelery. Total productos despues de filtrar: 4 
+2024-10-21 17:57:53.6760 INFO Llamada al metodo GetInCategory. 
+2024-10-21 17:57:53.9293 INFO Productos filtrados por categoria men's clothing. Total productos despues de filtrar: 4 
+2024-10-21 17:57:56.1242 INFO Llamada al metodo GetInCategory. 
+2024-10-21 17:57:56.3797 INFO Productos filtrados por categoria women's clothing. Total productos despues de filtrar: 6 
+2024-10-21 17:58:00.8150 INFO Llamada al metodo PostProducts. 
+2024-10-21 17:58:01.1123 INFO Producto xd agregado correctamente. 
+2024-10-21 17:58:04.1311 INFO Llamada al metodo DeleteProducts. 
+2024-10-21 17:58:04.4944 INFO 5 producto/s eliminado correctamente. 
+2024-10-21 17:58:07.1871 INFO Llamada al metodo SortResults. 
+2024-10-21 17:58:07.4437 INFO Productos ordenados de forma descendente 
+2024-10-21 17:58:08.1146 INFO Llamada al metodo SortResults. 
+2024-10-21 17:58:08.4276 INFO Productos ordenados de forma ascendente 
+2024-10-21 17:58:09.5276 INFO Llamada al metodo GetSingleProduct. 
+2024-10-21 17:58:09.7810 INFO Producto 2 filtrado correctamente. 
+2024-10-21 17:58:11.7823 INFO Llamada al metodo LimitResult. 
+2024-10-21 17:58:12.0328 INFO Productos limitados en 2. 
+2024-10-21 17:58:14.0621 INFO Llamada al metodo GetSingleProduct. 
+2024-10-21 17:58:14.3154 INFO Producto 3 filtrado correctamente. 

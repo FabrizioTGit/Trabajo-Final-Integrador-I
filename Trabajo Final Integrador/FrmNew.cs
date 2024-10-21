@@ -36,7 +36,7 @@ namespace Trabajo_Final_Integrador
 
         private void btnAccept_Click(object sender, EventArgs e)
         {
-            ConnecectionApi connecectionApi = new ConnecectionApi("https://fakestoreapi.com");
+            ConnecectionApi connecectionApi = new ConnecectionApi();
             string title = txtBoxTitle.Text;
             string priceText = txtBoxPrice.Text;
             decimal price = Convert.ToDecimal(priceText);

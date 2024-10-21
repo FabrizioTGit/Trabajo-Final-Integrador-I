@@ -15,7 +15,7 @@ namespace Trabajo_Final_Integrador
             InitializeComponent();
             _product = product;
             EditedProducts = oldList;
-            _connecectionApi = new ConnecectionApi("https://fakestoreapi.com");
+            _connecectionApi = new ConnecectionApi();
 
             InitializeProductFields(product);
         }

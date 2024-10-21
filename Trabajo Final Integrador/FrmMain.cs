@@ -1,6 +1,7 @@
 using Datos;
 using Negocio;
-using System.Collections.Generic;
+using System.Configuration;
+
 
 namespace Trabajo_Final_Integrador
 {
@@ -15,7 +16,9 @@ namespace Trabajo_Final_Integrador
             InitializeComponent();
             Products = new List<ApiProducts>();
             Categories = new List<string>();
-            connecectionApi = new ConnecectionApi("https://fakestoreapi.com");
+
+
+            connecectionApi = new ConnecectionApi();
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
@@ -123,25 +126,32 @@ namespace Trabajo_Final_Integrador
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (dataGridView.SelectedRows.Count > 0)
-            {
+            {                
                 var selectedIds = new List<int>();
                 foreach (DataGridViewRow row in dataGridView.SelectedRows)
                 {
                     int selectedId = Convert.ToInt32(row.Cells["Id"].Value);
                     selectedIds.Add(selectedId);
                 }
-
+                                
+                dataGridView.BindingContext[Products].SuspendBinding();
+                                
                 string resultMessage = connecectionApi.DeleteProducts(Products, selectedIds);
                 MessageBox.Show(resultMessage);
-
+                                
                 dataGridView.DataSource = null;
                 dataGridView.DataSource = Products;
+                                
+                dataGridView.BindingContext[Products].ResumeBinding();
             }
             else
             {
                 MessageBox.Show("Por favor, seleccione una fila.");
             }
         }
+
+
+
 
         private void dataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {

@@ -15,7 +15,7 @@
           }
         }
       },
-      "NLog/5.3.3": {
+      "NLog/5.3.4": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/NLog.dll": {
@@ -39,6 +39,41 @@
           "lib/net6.0/RestSharp.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Configuration.ConfigurationManager/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Security.Cryptography.ProtectedData": "8.0.0"
+        },
+        "compile": {
+          "lib/net6.0/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Configuration.ConfigurationManager.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/8.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.Security.Cryptography.ProtectedData.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.Security.Cryptography.ProtectedData.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
         }
       }
     }
@@ -74,10 +109,10 @@
         "packageIcon.png"
       ]
     },
-    "NLog/5.3.3": {
-      "sha512": "cy0+hlrUbYu+6mgUsILqCcqlJ2Csqyt2lm8y9T9kE8nhgwl8SvR+LM21QX4nmzFCPiowbrTFYxNF8+gWpy7/HQ==",
+    "NLog/5.3.4": {
+      "sha512": "gLy7+O1hEYJXIlcTr1/VWjGXrZTQFZzYNO18IWasD64pNwz0BreV+nHLxWKXWZzERRzoKnsk2XYtwLkTVk7J1A==",
       "type": "package",
-      "path": "nlog/5.3.3",
+      "path": "nlog/5.3.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -94,7 +129,7 @@
         "lib/netstandard1.5/NLog.xml",
         "lib/netstandard2.0/NLog.dll",
         "lib/netstandard2.0/NLog.xml",
-        "nlog.5.3.3.nupkg.sha512",
+        "nlog.5.3.4.nupkg.sha512",
         "nlog.nuspec"
       ]
     },
@@ -122,13 +157,80 @@
         "restsharp.nuspec",
         "restsharp.png"
       ]
+    },
+    "System.Configuration.ConfigurationManager/8.0.1": {
+      "sha512": "gPYFPDyohW2gXNhdQRSjtmeS6FymL2crg4Sral1wtvEJ7DUqFCDWDVbbLobASbzxfic8U1hQEdC7hmg9LHncMw==",
+      "type": "package",
+      "path": "system.configuration.configurationmanager/8.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Configuration.ConfigurationManager.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Configuration.ConfigurationManager.targets",
+        "lib/net462/System.Configuration.ConfigurationManager.dll",
+        "lib/net462/System.Configuration.ConfigurationManager.xml",
+        "lib/net6.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net6.0/System.Configuration.ConfigurationManager.xml",
+        "lib/net7.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net7.0/System.Configuration.ConfigurationManager.xml",
+        "lib/net8.0/System.Configuration.ConfigurationManager.dll",
+        "lib/net8.0/System.Configuration.ConfigurationManager.xml",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.dll",
+        "lib/netstandard2.0/System.Configuration.ConfigurationManager.xml",
+        "system.configuration.configurationmanager.8.0.1.nupkg.sha512",
+        "system.configuration.configurationmanager.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "System.Security.Cryptography.ProtectedData/8.0.0": {
+      "sha512": "+TUFINV2q2ifyXauQXRwy4CiBhqvDEDZeVJU7qfxya4aRYOKzVBpN+4acx25VcPB9ywUN6C0n8drWl110PhZEg==",
+      "type": "package",
+      "path": "system.security.cryptography.protecteddata/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Security.Cryptography.ProtectedData.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/System.Security.Cryptography.ProtectedData.targets",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net462/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net462/System.Security.Cryptography.ProtectedData.xml",
+        "lib/net6.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net6.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/net7.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net7.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/net8.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/net8.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll",
+        "lib/netstandard2.0/System.Security.Cryptography.ProtectedData.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "system.security.cryptography.protecteddata.8.0.0.nupkg.sha512",
+        "system.security.cryptography.protecteddata.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "NLog >= 5.3.3",
+      "NLog >= 5.3.4",
       "Newtonsoft.Json >= 13.0.3",
-      "RestSharp >= 112.0.0"
+      "RestSharp >= 112.0.0",
+      "System.Configuration.ConfigurationManager >= 8.0.1"
     ]
   },
   "packageFolders": {
@@ -178,7 +280,7 @@
         "dependencies": {
           "NLog": {
             "target": "Package",
-            "version": "[5.3.3, )"
+            "version": "[5.3.4, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",
@@ -187,6 +289,10 @@
           "RestSharp": {
             "target": "Package",
             "version": "[112.0.0, )"
+          },
+          "System.Configuration.ConfigurationManager": {
+            "target": "Package",
+            "version": "[8.0.1, )"
           }
         },
         "imports": [
@@ -205,7 +311,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
