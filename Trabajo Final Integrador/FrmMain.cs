@@ -99,11 +99,6 @@ namespace Trabajo_Final_Integrador
             }
         }
 
-        private void btnAcctions_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnNew_Click(object sender, EventArgs e)
         {
             using (FrmNew form = new FrmNew(this.Products))
@@ -116,11 +111,6 @@ namespace Trabajo_Final_Integrador
                     dataGridView.DataSource = this.Products;
                 }
             }
-        }
-
-        private void btnDelete_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
@@ -150,9 +140,6 @@ namespace Trabajo_Final_Integrador
             }
         }
 
-
-
-
         private void dataGridView_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex < 0) return;
@@ -170,14 +157,11 @@ namespace Trabajo_Final_Integrador
         }
 
         private void txtBoxSearch_TextChanged(object sender, EventArgs e)
-        {
-            // Capturamos la categoría seleccionada
+        {            
             string? selectedCategory = cmbBoxCategory.SelectedItem?.ToString();
 
-            // Validamos que el texto en txtBoxSearch sea un número válido
             if (int.TryParse(txtBoxSearch.Text, out int filterId))
-            {
-                // Comprobamos si la lista esta filtrada
+            {                
                 if (selectedCategory == "All")
                 {
                     var product = connecectionApi.GetSingleProduct(Products, filterId);
@@ -190,8 +174,7 @@ namespace Trabajo_Final_Integrador
                 }
             }
             else
-            {
-                // Comprobamos si la lista esta filtrada
+            {               
                 if (selectedCategory == "All")
                 {
                     dataGridView.DataSource = null;

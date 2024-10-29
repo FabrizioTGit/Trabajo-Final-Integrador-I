@@ -36,8 +36,7 @@ namespace Datos
 
                     listProductsToUpdate.Clear();
                     listProductsToUpdate.AddRange(products);
-
-                    // Loguear la salida del método
+                                        
                     logger.Info("Metodo GetProducts finalizado correctamente. Lista de productos actualizada.");
 
                     return "Productos cargados correctamente";

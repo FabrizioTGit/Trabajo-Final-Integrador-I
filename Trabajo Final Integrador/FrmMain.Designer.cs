@@ -36,13 +36,13 @@
             btnAscDesc = new Button();
             btnNew = new Button();
             panel1 = new Panel();
+            lblLimit = new Label();
+            lblSeach = new Label();
+            lblFilterCategory = new Label();
+            lblNew = new Label();
+            lblAscDesc = new Label();
             txtBoxLimit = new TextBox();
             txtBoxSearch = new TextBox();
-            lblAscDesc = new Label();
-            lblNew = new Label();
-            lblFilterCategory = new Label();
-            lblSeach = new Label();
-            lblLimit = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView).BeginInit();
             cntxMenuStripDelete.SuspendLayout();
             panel1.SuspendLayout();
@@ -125,6 +125,51 @@
             panel1.Size = new Size(1238, 64);
             panel1.TabIndex = 5;
             // 
+            // lblLimit
+            // 
+            lblLimit.AutoSize = true;
+            lblLimit.Location = new Point(403, 10);
+            lblLimit.Name = "lblLimit";
+            lblLimit.Size = new Size(101, 15);
+            lblLimit.TabIndex = 11;
+            lblLimit.Text = "Limitar Productos";
+            // 
+            // lblSeach
+            // 
+            lblSeach.AutoSize = true;
+            lblSeach.Location = new Point(339, 9);
+            lblSeach.Name = "lblSeach";
+            lblSeach.Size = new Size(55, 15);
+            lblSeach.TabIndex = 10;
+            lblSeach.Text = "Buscar Id";
+            // 
+            // lblFilterCategory
+            // 
+            lblFilterCategory.AutoSize = true;
+            lblFilterCategory.Location = new Point(203, 9);
+            lblFilterCategory.Name = "lblFilterCategory";
+            lblFilterCategory.Size = new Size(91, 15);
+            lblFilterCategory.TabIndex = 9;
+            lblFilterCategory.Text = "Filtrar Categoria";
+            // 
+            // lblNew
+            // 
+            lblNew.AutoSize = true;
+            lblNew.Location = new Point(110, 10);
+            lblNew.Name = "lblNew";
+            lblNew.Size = new Size(87, 15);
+            lblNew.TabIndex = 8;
+            lblNew.Text = "Crear Producto";
+            // 
+            // lblAscDesc
+            // 
+            lblAscDesc.AutoSize = true;
+            lblAscDesc.Location = new Point(12, 10);
+            lblAscDesc.Name = "lblAscDesc";
+            lblAscDesc.Size = new Size(50, 15);
+            lblAscDesc.TabIndex = 7;
+            lblAscDesc.Text = "Ordenar";
+            // 
             // txtBoxLimit
             // 
             txtBoxLimit.Location = new Point(403, 27);
@@ -140,51 +185,6 @@
             txtBoxSearch.Size = new Size(55, 23);
             txtBoxSearch.TabIndex = 5;
             txtBoxSearch.TextChanged += txtBoxSearch_TextChanged;
-            // 
-            // lblAscDesc
-            // 
-            lblAscDesc.AutoSize = true;
-            lblAscDesc.Location = new Point(12, 10);
-            lblAscDesc.Name = "lblAscDesc";
-            lblAscDesc.Size = new Size(50, 15);
-            lblAscDesc.TabIndex = 7;
-            lblAscDesc.Text = "Ordenar";
-            // 
-            // lblNew
-            // 
-            lblNew.AutoSize = true;
-            lblNew.Location = new Point(110, 10);
-            lblNew.Name = "lblNew";
-            lblNew.Size = new Size(87, 15);
-            lblNew.TabIndex = 8;
-            lblNew.Text = "Crear Producto";
-            // 
-            // lblFilterCategory
-            // 
-            lblFilterCategory.AutoSize = true;
-            lblFilterCategory.Location = new Point(203, 9);
-            lblFilterCategory.Name = "lblFilterCategory";
-            lblFilterCategory.Size = new Size(91, 15);
-            lblFilterCategory.TabIndex = 9;
-            lblFilterCategory.Text = "Filtrar Categoria";
-            // 
-            // lblSeach
-            // 
-            lblSeach.AutoSize = true;
-            lblSeach.Location = new Point(339, 9);
-            lblSeach.Name = "lblSeach";
-            lblSeach.Size = new Size(55, 15);
-            lblSeach.TabIndex = 10;
-            lblSeach.Text = "Buscar Id";
-            // 
-            // lblLimit
-            // 
-            lblLimit.AutoSize = true;
-            lblLimit.Location = new Point(403, 10);
-            lblLimit.Name = "lblLimit";
-            lblLimit.Size = new Size(101, 15);
-            lblLimit.TabIndex = 11;
-            lblLimit.Text = "Limitar Productos";
             // 
             // FrmMain
             // 
