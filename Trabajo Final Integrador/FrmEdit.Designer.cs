@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmEdit));
             lblCategoryEdit = new Label();
             lblDescriptionEdit = new Label();
             lblPriceEdit = new Label();
@@ -45,6 +46,7 @@
             // lblCategoryEdit
             // 
             lblCategoryEdit.AutoSize = true;
+            lblCategoryEdit.ForeColor = SystemColors.Control;
             lblCategoryEdit.Location = new Point(51, 213);
             lblCategoryEdit.Name = "lblCategoryEdit";
             lblCategoryEdit.Size = new Size(61, 15);
@@ -54,6 +56,7 @@
             // lblDescriptionEdit
             // 
             lblDescriptionEdit.AutoSize = true;
+            lblDescriptionEdit.ForeColor = SystemColors.Control;
             lblDescriptionEdit.Location = new Point(51, 166);
             lblDescriptionEdit.Name = "lblDescriptionEdit";
             lblDescriptionEdit.Size = new Size(72, 15);
@@ -63,6 +66,7 @@
             // lblPriceEdit
             // 
             lblPriceEdit.AutoSize = true;
+            lblPriceEdit.ForeColor = SystemColors.Control;
             lblPriceEdit.Location = new Point(51, 118);
             lblPriceEdit.Name = "lblPriceEdit";
             lblPriceEdit.Size = new Size(43, 15);
@@ -72,6 +76,7 @@
             // lblTitleEdit
             // 
             lblTitleEdit.AutoSize = true;
+            lblTitleEdit.ForeColor = SystemColors.Control;
             lblTitleEdit.Location = new Point(51, 73);
             lblTitleEdit.Name = "lblTitleEdit";
             lblTitleEdit.Size = new Size(40, 15);
@@ -81,6 +86,7 @@
             // lblIdEdit
             // 
             lblIdEdit.AutoSize = true;
+            lblIdEdit.ForeColor = SystemColors.Control;
             lblIdEdit.Location = new Point(53, 29);
             lblIdEdit.Name = "lblIdEdit";
             lblIdEdit.Size = new Size(21, 15);
@@ -97,22 +103,30 @@
             // 
             // btnCancelEdit
             // 
+            btnCancelEdit.BackColor = SystemColors.HotTrack;
+            btnCancelEdit.FlatAppearance.BorderSize = 0;
+            btnCancelEdit.FlatStyle = FlatStyle.Flat;
+            btnCancelEdit.ForeColor = SystemColors.ButtonHighlight;
             btnCancelEdit.Location = new Point(143, 271);
             btnCancelEdit.Name = "btnCancelEdit";
             btnCancelEdit.Size = new Size(83, 23);
             btnCancelEdit.TabIndex = 41;
-            btnCancelEdit.Text = "Cancel";
-            btnCancelEdit.UseVisualStyleBackColor = true;
+            btnCancelEdit.Text = "Cancelar";
+            btnCancelEdit.UseVisualStyleBackColor = false;
             btnCancelEdit.Click += btnCancelEdit_Click;
             // 
             // btnAcceptEdit
             // 
+            btnAcceptEdit.BackColor = SystemColors.HotTrack;
+            btnAcceptEdit.FlatAppearance.BorderSize = 0;
+            btnAcceptEdit.FlatStyle = FlatStyle.Flat;
+            btnAcceptEdit.ForeColor = SystemColors.ButtonHighlight;
             btnAcceptEdit.Location = new Point(37, 271);
             btnAcceptEdit.Name = "btnAcceptEdit";
             btnAcceptEdit.Size = new Size(83, 23);
             btnAcceptEdit.TabIndex = 40;
             btnAcceptEdit.Text = "Aceptar";
-            btnAcceptEdit.UseVisualStyleBackColor = true;
+            btnAcceptEdit.UseVisualStyleBackColor = false;
             btnAcceptEdit.Click += btnAcceptEdit_Click;
             // 
             // txtBoxCategoryEdit
@@ -147,6 +161,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(45, 66, 91);
             ClientSize = new Size(263, 323);
             Controls.Add(lblCategoryEdit);
             Controls.Add(lblDescriptionEdit);
@@ -160,6 +175,7 @@
             Controls.Add(txtBoxDescriptionEdit);
             Controls.Add(txtBoxPriceEdit);
             Controls.Add(txtBoxTitleEdit);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "FrmEdit";
             Text = "Editar Producto";

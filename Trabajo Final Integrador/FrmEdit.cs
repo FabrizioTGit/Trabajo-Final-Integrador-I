@@ -9,12 +9,14 @@ namespace Trabajo_Final_Integrador
         private readonly ConnecectionApi _connecectionApi;
         private ApiProducts _product;
         public List<ApiProducts> EditedProducts { get; private set; }
+        public List<string> newCategory { get; private set; }
 
-        public FrmEdit(ApiProducts product, List<ApiProducts> oldList)
+        public FrmEdit(ApiProducts product, List<ApiProducts> oldList, List<string> existingCategories)
         {
             InitializeComponent();
             _product = product;
             EditedProducts = oldList;
+            newCategory = existingCategories;
             _connecectionApi = new ConnecectionApi();
 
             InitializeProductFields(product);
@@ -37,9 +39,18 @@ namespace Trabajo_Final_Integrador
                 return;
             }
 
+            if (!string.IsNullOrEmpty(txtBoxCategoryEdit.Text))
+            {
+                if (!newCategory.Contains(txtBoxCategoryEdit.Text))
+                {
+                    newCategory.Add(txtBoxCategoryEdit.Text);
+                }
+            }
+
             var updatedProduct = GetUpdatedProductFromFields();
             MessageBox.Show(_connecectionApi.PutProducts(EditedProducts, updatedProduct));
-            this.Close();
+            this.DialogResult = DialogResult.OK;
+            this.Dispose();
         }
 
         private ApiProducts GetUpdatedProductFromFields()

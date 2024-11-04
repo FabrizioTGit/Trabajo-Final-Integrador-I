@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            DataGridViewCellStyle dataGridViewCellStyle1 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle2 = new DataGridViewCellStyle();
+            DataGridViewCellStyle dataGridViewCellStyle3 = new DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             dataGridView = new DataGridView();
             cntxMenuStripDelete = new ContextMenuStrip(components);
             deleteToolStripMenuItem = new ToolStripMenuItem();
@@ -53,12 +57,40 @@
             dataGridView.AllowUserToResizeColumns = false;
             dataGridView.AllowUserToResizeRows = false;
             dataGridView.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView.BackgroundColor = Color.FromArgb(45, 66, 91);
+            dataGridView.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = SystemColors.HotTrack;
+            dataGridViewCellStyle1.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle1.ForeColor = SystemColors.Window;
+            dataGridViewCellStyle1.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = DataGridViewTriState.True;
+            dataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             dataGridView.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView.ContextMenuStrip = cntxMenuStripDelete;
+            dataGridViewCellStyle2.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = Color.FromArgb(45, 66, 91);
+            dataGridViewCellStyle2.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle2.ForeColor = SystemColors.Window;
+            dataGridViewCellStyle2.SelectionBackColor = Color.SteelBlue;
+            dataGridViewCellStyle2.SelectionForeColor = SystemColors.Window;
+            dataGridViewCellStyle2.WrapMode = DataGridViewTriState.False;
+            dataGridView.DefaultCellStyle = dataGridViewCellStyle2;
             dataGridView.Dock = DockStyle.Fill;
+            dataGridView.EnableHeadersVisualStyles = false;
             dataGridView.Location = new Point(0, 64);
             dataGridView.Name = "dataGridView";
             dataGridView.ReadOnly = true;
+            dataGridViewCellStyle3.Alignment = DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = SystemColors.ControlDark;
+            dataGridViewCellStyle3.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            dataGridViewCellStyle3.ForeColor = SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = DataGridViewTriState.True;
+            dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridView.RowHeadersVisible = false;
             dataGridView.RowTemplate.Height = 25;
             dataGridView.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
             dataGridView.Size = new Size(1238, 492);
@@ -80,8 +112,11 @@
             // 
             // cmbBoxCategory
             // 
+            cmbBoxCategory.BackColor = SystemColors.HotTrack;
+            cmbBoxCategory.FlatStyle = FlatStyle.Flat;
+            cmbBoxCategory.ForeColor = SystemColors.ButtonFace;
             cmbBoxCategory.FormattingEnabled = true;
-            cmbBoxCategory.Location = new Point(203, 28);
+            cmbBoxCategory.Location = new Point(213, 27);
             cmbBoxCategory.Name = "cmbBoxCategory";
             cmbBoxCategory.Size = new Size(120, 23);
             cmbBoxCategory.TabIndex = 1;
@@ -89,26 +124,35 @@
             // 
             // btnAscDesc
             // 
+            btnAscDesc.BackColor = SystemColors.HotTrack;
+            btnAscDesc.FlatAppearance.BorderSize = 0;
+            btnAscDesc.FlatStyle = FlatStyle.Flat;
+            btnAscDesc.ForeColor = SystemColors.ButtonFace;
             btnAscDesc.Location = new Point(12, 28);
             btnAscDesc.Name = "btnAscDesc";
-            btnAscDesc.Size = new Size(92, 23);
+            btnAscDesc.Size = new Size(90, 21);
             btnAscDesc.TabIndex = 2;
             btnAscDesc.Text = "Descendente";
-            btnAscDesc.UseVisualStyleBackColor = true;
+            btnAscDesc.UseVisualStyleBackColor = false;
             btnAscDesc.Click += btnAscDesc_Click;
             // 
             // btnNew
             // 
+            btnNew.BackColor = SystemColors.HotTrack;
+            btnNew.FlatAppearance.BorderSize = 0;
+            btnNew.FlatStyle = FlatStyle.Flat;
+            btnNew.ForeColor = SystemColors.ButtonFace;
             btnNew.Location = new Point(110, 27);
             btnNew.Name = "btnNew";
-            btnNew.Size = new Size(77, 23);
+            btnNew.Size = new Size(90, 21);
             btnNew.TabIndex = 4;
             btnNew.Text = "Nuevo";
-            btnNew.UseVisualStyleBackColor = true;
+            btnNew.UseVisualStyleBackColor = false;
             btnNew.Click += btnNew_Click;
             // 
             // panel1
             // 
+            panel1.BackColor = Color.FromArgb(45, 66, 91);
             panel1.Controls.Add(lblLimit);
             panel1.Controls.Add(lblSeach);
             panel1.Controls.Add(lblFilterCategory);
@@ -128,7 +172,8 @@
             // lblLimit
             // 
             lblLimit.AutoSize = true;
-            lblLimit.Location = new Point(403, 10);
+            lblLimit.ForeColor = Color.Lime;
+            lblLimit.Location = new Point(413, 10);
             lblLimit.Name = "lblLimit";
             lblLimit.Size = new Size(101, 15);
             lblLimit.TabIndex = 11;
@@ -137,7 +182,8 @@
             // lblSeach
             // 
             lblSeach.AutoSize = true;
-            lblSeach.Location = new Point(339, 9);
+            lblSeach.ForeColor = Color.Lime;
+            lblSeach.Location = new Point(349, 10);
             lblSeach.Name = "lblSeach";
             lblSeach.Size = new Size(55, 15);
             lblSeach.TabIndex = 10;
@@ -146,7 +192,8 @@
             // lblFilterCategory
             // 
             lblFilterCategory.AutoSize = true;
-            lblFilterCategory.Location = new Point(203, 9);
+            lblFilterCategory.ForeColor = Color.Lime;
+            lblFilterCategory.Location = new Point(213, 10);
             lblFilterCategory.Name = "lblFilterCategory";
             lblFilterCategory.Size = new Size(91, 15);
             lblFilterCategory.TabIndex = 9;
@@ -155,6 +202,7 @@
             // lblNew
             // 
             lblNew.AutoSize = true;
+            lblNew.ForeColor = Color.Lime;
             lblNew.Location = new Point(110, 10);
             lblNew.Name = "lblNew";
             lblNew.Size = new Size(87, 15);
@@ -164,6 +212,7 @@
             // lblAscDesc
             // 
             lblAscDesc.AutoSize = true;
+            lblAscDesc.ForeColor = Color.Lime;
             lblAscDesc.Location = new Point(12, 10);
             lblAscDesc.Name = "lblAscDesc";
             lblAscDesc.Size = new Size(50, 15);
@@ -172,7 +221,10 @@
             // 
             // txtBoxLimit
             // 
-            txtBoxLimit.Location = new Point(403, 27);
+            txtBoxLimit.BackColor = SystemColors.HotTrack;
+            txtBoxLimit.BorderStyle = BorderStyle.FixedSingle;
+            txtBoxLimit.ForeColor = SystemColors.ButtonFace;
+            txtBoxLimit.Location = new Point(413, 27);
             txtBoxLimit.Name = "txtBoxLimit";
             txtBoxLimit.Size = new Size(102, 23);
             txtBoxLimit.TabIndex = 6;
@@ -180,7 +232,10 @@
             // 
             // txtBoxSearch
             // 
-            txtBoxSearch.Location = new Point(339, 28);
+            txtBoxSearch.BackColor = SystemColors.HotTrack;
+            txtBoxSearch.BorderStyle = BorderStyle.FixedSingle;
+            txtBoxSearch.ForeColor = SystemColors.ButtonFace;
+            txtBoxSearch.Location = new Point(349, 27);
             txtBoxSearch.Name = "txtBoxSearch";
             txtBoxSearch.Size = new Size(55, 23);
             txtBoxSearch.TabIndex = 5;
@@ -193,6 +248,7 @@
             ClientSize = new Size(1238, 556);
             Controls.Add(dataGridView);
             Controls.Add(panel1);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "FrmMain";
             Text = "Trabajo Final Integrador";
             Load += FrmMain_Load;

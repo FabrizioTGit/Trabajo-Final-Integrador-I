@@ -17,11 +17,13 @@ namespace Trabajo_Final_Integrador
 
         private ErrorProvider _errorProvider = new ErrorProvider();
         public List<ApiProducts> newProducts { get; private set; }
+        public List<string> newCategory { get; private set; }
 
-        public FrmNew(List<ApiProducts> existingProducts)
+        public FrmNew(List<ApiProducts> existingProducts, List<string> existingCategories)
         {
             InitializeComponent();
             this.newProducts = existingProducts;
+            this.newCategory = existingCategories;
         }
 
         private void btnCancel_Click(object sender, EventArgs e)
@@ -48,6 +50,14 @@ namespace Trabajo_Final_Integrador
             }
 
             int id = int.Parse(txtBoxId.Text);
+
+            if (!string.IsNullOrEmpty(txtBoxCategory.Text))
+            {
+                if (!newCategory.Contains(txtBoxCategory.Text))
+                {
+                    newCategory.Add(txtBoxCategory.Text);
+                }
+            }
 
             ApiProducts product = new ApiProducts
             {

@@ -2,3 +2,255 @@
 2024-10-29 17:29:00.8296 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
 2024-10-29 17:29:02.1915 INFO Llamada al metodo GetCategories. 
 2024-10-29 17:29:02.4438 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 14:10:59.8104 INFO Productos obtenidos: 20 
+2024-11-04 14:10:59.8394 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 14:11:01.5336 INFO Llamada al metodo GetCategories. 
+2024-11-04 14:11:01.8031 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 14:11:13.8388 INFO Llamada al metodo GetInCategory. 
+2024-11-04 14:11:14.1101 INFO Productos filtrados por categoria electronics. Total productos despues de filtrar: 6 
+2024-11-04 14:11:15.1027 INFO Llamada al metodo GetInCategory. 
+2024-11-04 14:11:15.3765 INFO Productos filtrados por categoria jewelery. Total productos despues de filtrar: 4 
+2024-11-04 14:11:16.0631 INFO Llamada al metodo GetInCategory. 
+2024-11-04 14:11:16.3374 INFO Productos filtrados por categoria men's clothing. Total productos despues de filtrar: 4 
+2024-11-04 14:21:37.3535 INFO Productos obtenidos: 20 
+2024-11-04 14:21:37.3828 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 14:21:38.3591 INFO Llamada al metodo GetCategories. 
+2024-11-04 14:21:38.6473 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 14:43:09.2101 INFO Productos obtenidos: 20 
+2024-11-04 14:43:09.2370 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 14:43:11.0300 INFO Llamada al metodo GetCategories. 
+2024-11-04 14:43:11.3033 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 14:43:16.4807 INFO Llamada al metodo LimitResult. 
+2024-11-04 14:43:16.7524 INFO Productos limitados en 5. 
+2024-11-04 14:43:18.7203 INFO Llamada al metodo GetSingleProduct. 
+2024-11-04 14:43:18.9849 INFO Producto 6 filtrado correctamente. 
+2024-11-04 14:43:29.4152 INFO Llamada al metodo PostProducts. 
+2024-11-04 14:43:30.0067 INFO Producto xd agregado correctamente. 
+2024-11-04 14:56:01.8440 INFO Productos obtenidos: 20 
+2024-11-04 14:56:01.8698 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 14:56:02.9803 INFO Llamada al metodo GetCategories. 
+2024-11-04 14:56:03.2562 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 14:56:08.4941 INFO Llamada al metodo GetInCategory. 
+2024-11-04 14:56:08.7973 INFO Productos filtrados por categoria electronics. Total productos despues de filtrar: 6 
+2024-11-04 14:56:12.7455 INFO Llamada al metodo PostProducts. 
+2024-11-04 14:56:13.3366 INFO Producto xd agregado correctamente. 
+2024-11-04 15:06:32.9406 INFO Productos obtenidos: 20 
+2024-11-04 15:06:32.9674 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:06:33.8957 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:06:34.1425 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:06:39.6460 INFO Llamada al metodo PostProducts. 
+2024-11-04 15:06:40.4077 INFO Producto xd agregado correctamente. 
+2024-11-04 15:06:53.7647 INFO Llamada al metodo PostProducts. 
+2024-11-04 15:06:54.3428 INFO Producto afasfas agregado correctamente. 
+2024-11-04 15:07:17.5354 INFO Productos obtenidos: 20 
+2024-11-04 15:07:17.5615 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:07:18.3341 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:07:18.6064 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:07:25.6119 INFO Llamada al metodo PostProducts. 
+2024-11-04 15:07:26.4580 INFO Producto ssed agregado correctamente. 
+2024-11-04 15:08:30.9017 INFO Productos obtenidos: 20 
+2024-11-04 15:08:30.9270 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:08:32.1004 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:08:32.3744 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:08:42.7840 INFO Llamada al metodo PostProducts. 
+2024-11-04 15:08:43.5737 INFO Producto xd agregado correctamente. 
+2024-11-04 15:09:19.5864 INFO Productos obtenidos: 20 
+2024-11-04 15:09:19.6137 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:09:20.5061 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:09:20.7484 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:09:26.0595 INFO Llamada al metodo PostProducts. 
+2024-11-04 15:09:26.6362 INFO Producto asdas agregado correctamente. 
+2024-11-04 15:12:01.6292 INFO Productos obtenidos: 20 
+2024-11-04 15:12:01.6546 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:12:02.6597 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:12:02.9489 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:12:07.4131 INFO Llamada al metodo PostProducts. 
+2024-11-04 15:12:07.9939 INFO Producto xddddd agregado correctamente. 
+2024-11-04 15:12:42.6910 INFO Llamada al metodo PostProducts. 
+2024-11-04 15:12:43.2238 INFO Producto xddddd agregado correctamente. 
+2024-11-04 15:12:48.0832 INFO Llamada al metodo GetInCategory. 
+2024-11-04 15:12:48.4142 INFO Productos filtrados por categoria xd. Total productos despues de filtrar: 2 
+2024-11-04 15:14:12.0238 INFO Productos obtenidos: 20 
+2024-11-04 15:14:12.0500 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:14:13.0366 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:14:13.3032 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:14:18.6507 INFO Llamada al metodo PutProducts. 
+2024-11-04 15:14:19.4804 INFO Producto de ID: 11. Actualizado correctamente. 
+2024-11-04 15:15:47.7358 INFO Productos obtenidos: 20 
+2024-11-04 15:15:47.7620 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:15:48.7631 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:15:49.0313 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:16:29.9905 INFO Productos obtenidos: 20 
+2024-11-04 15:16:30.0230 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:16:30.9583 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:16:31.2288 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:16:33.8414 INFO Llamada al metodo PutProducts. 
+2024-11-04 15:16:34.4170 INFO Producto de ID: 8. Actualizado correctamente. 
+2024-11-04 15:17:00.4749 INFO Productos obtenidos: 20 
+2024-11-04 15:17:00.5016 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:17:01.5145 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:17:01.7658 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:17:04.5996 INFO Llamada al metodo PostProducts. 
+2024-11-04 15:17:05.3921 INFO Producto xd agregado correctamente. 
+2024-11-04 15:17:31.3148 INFO Llamada al metodo PostProducts. 
+2024-11-04 15:17:31.8509 INFO Producto xd agregado correctamente. 
+2024-11-04 15:17:37.7389 INFO Llamada al metodo GetInCategory. 
+2024-11-04 15:17:38.0437 INFO Productos filtrados por categoria puto. Total productos despues de filtrar: 1 
+2024-11-04 15:18:00.5997 INFO Productos obtenidos: 20 
+2024-11-04 15:18:00.6289 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:18:01.6537 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:18:01.9280 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:18:14.6000 INFO Llamada al metodo PostProducts. 
+2024-11-04 15:18:15.4758 INFO Producto xd agregado correctamente. 
+2024-11-04 15:18:26.2357 INFO Llamada al metodo GetInCategory. 
+2024-11-04 15:18:26.5040 INFO Productos filtrados por categoria electronics. Total productos despues de filtrar: 6 
+2024-11-04 15:18:26.5040 INFO Llamada al metodo GetInCategory. 
+2024-11-04 15:18:26.7795 INFO Productos filtrados por categoria jewelery. Total productos despues de filtrar: 4 
+2024-11-04 15:18:26.7861 INFO Llamada al metodo GetInCategory. 
+2024-11-04 15:18:27.0536 INFO Productos filtrados por categoria men's clothing. Total productos despues de filtrar: 4 
+2024-11-04 15:18:27.0640 INFO Llamada al metodo GetInCategory. 
+2024-11-04 15:18:27.3291 INFO Productos filtrados por categoria women's clothing. Total productos despues de filtrar: 6 
+2024-11-04 15:22:56.3933 INFO Productos obtenidos: 20 
+2024-11-04 15:22:56.4192 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:22:57.4106 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:22:57.6783 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:23:01.3431 INFO Llamada al metodo PutProducts. 
+2024-11-04 15:23:02.1899 INFO Producto de ID: 14. Actualizado correctamente. 
+2024-11-04 15:23:45.7687 INFO Productos obtenidos: 20 
+2024-11-04 15:23:45.7981 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:23:53.6119 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:23:53.8664 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:24:18.5159 INFO Productos obtenidos: 20 
+2024-11-04 15:24:18.5465 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:24:20.1790 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:24:20.4213 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:24:28.6675 INFO Llamada al metodo PutProducts. 
+2024-11-04 15:24:29.4351 INFO Producto de ID: 10. Actualizado correctamente. 
+2024-11-04 15:25:30.2597 INFO Llamada al metodo PostProducts. 
+2024-11-04 15:25:31.0689 INFO Producto xd agregado correctamente. 
+2024-11-04 15:25:36.2978 INFO Llamada al metodo GetInCategory. 
+2024-11-04 15:25:36.8482 INFO Productos filtrados por categoria xd. Total productos despues de filtrar: 1 
+2024-11-04 15:26:11.7946 INFO Productos obtenidos: 20 
+2024-11-04 15:26:11.8208 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:26:12.8985 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:26:13.1674 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:26:15.7634 INFO Llamada al metodo PutProducts. 
+2024-11-04 15:26:16.6085 INFO Producto de ID: 10. Actualizado correctamente. 
+2024-11-04 15:27:43.3835 INFO Productos obtenidos: 20 
+2024-11-04 15:27:43.4090 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:27:44.7641 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:27:45.0298 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:27:49.1087 INFO Llamada al metodo PutProducts. 
+2024-11-04 15:27:49.8702 INFO Producto de ID: 14. Actualizado correctamente. 
+2024-11-04 15:28:01.5766 INFO Llamada al metodo GetInCategory. 
+2024-11-04 15:28:01.8456 INFO Productos filtrados por categoria xd. Total productos despues de filtrar: 1 
+2024-11-04 15:28:14.9752 INFO Productos obtenidos: 20 
+2024-11-04 15:28:15.0066 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:28:16.5014 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:28:16.7456 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:28:19.9540 INFO Llamada al metodo PutProducts. 
+2024-11-04 15:28:20.8048 INFO Producto de ID: 10. Actualizado correctamente. 
+2024-11-04 15:28:25.2541 INFO Llamada al metodo GetInCategory. 
+2024-11-04 15:28:25.4985 INFO Productos filtrados por categoria xd. Total productos despues de filtrar: 1 
+2024-11-04 15:29:42.6149 INFO Productos obtenidos: 20 
+2024-11-04 15:29:42.6405 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:29:43.5208 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:29:43.7901 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:30:59.6956 INFO Productos obtenidos: 20 
+2024-11-04 15:30:59.7216 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:31:00.9567 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:31:01.2013 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:33:42.9154 INFO Productos obtenidos: 20 
+2024-11-04 15:33:42.9406 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:33:44.4614 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:33:44.7321 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:41:34.4469 INFO Productos obtenidos: 20 
+2024-11-04 15:41:34.4729 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:41:35.4425 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:41:35.7084 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:44:15.4023 INFO Productos obtenidos: 20 
+2024-11-04 15:44:15.4266 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:44:16.4734 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:44:16.7138 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:49:51.6183 INFO Productos obtenidos: 20 
+2024-11-04 15:49:51.6441 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:49:52.6551 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:49:52.9285 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:49:55.5885 INFO Llamada al metodo GetSingleProduct. 
+2024-11-04 15:49:55.8668 INFO Producto 2 filtrado correctamente. 
+2024-11-04 15:52:25.1110 INFO Productos obtenidos: 20 
+2024-11-04 15:52:25.1444 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:52:26.1703 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:52:26.4384 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:52:54.6655 INFO Productos obtenidos: 20 
+2024-11-04 15:52:54.6928 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:52:55.6895 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:52:55.9748 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:57:06.4534 INFO Productos obtenidos: 20 
+2024-11-04 15:57:06.4808 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:57:07.6521 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:57:07.9176 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:57:55.2231 INFO Productos obtenidos: 20 
+2024-11-04 15:57:55.2751 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:57:56.8242 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:57:57.0701 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:58:53.9555 INFO Productos obtenidos: 20 
+2024-11-04 15:58:53.9815 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:58:55.3239 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:58:55.5901 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 15:59:35.1499 INFO Productos obtenidos: 20 
+2024-11-04 15:59:35.1758 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 15:59:36.3168 INFO Llamada al metodo GetCategories. 
+2024-11-04 15:59:36.5722 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 16:00:16.4287 INFO Productos obtenidos: 20 
+2024-11-04 16:00:16.4549 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 16:00:18.5841 INFO Llamada al metodo GetCategories. 
+2024-11-04 16:00:18.8538 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 16:02:53.2608 INFO Productos obtenidos: 20 
+2024-11-04 16:02:53.2865 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 16:02:55.1709 INFO Llamada al metodo GetCategories. 
+2024-11-04 16:02:55.4260 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 16:04:02.2705 INFO Productos obtenidos: 20 
+2024-11-04 16:04:02.3032 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 16:04:03.4119 INFO Llamada al metodo GetCategories. 
+2024-11-04 16:04:03.6585 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 16:04:12.4538 INFO Llamada al metodo PostProducts. 
+2024-11-04 16:04:13.0305 INFO Producto xd agregado correctamente. 
+2024-11-04 16:05:15.6279 INFO Productos obtenidos: 20 
+2024-11-04 16:05:15.6537 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 16:05:16.7507 INFO Llamada al metodo GetCategories. 
+2024-11-04 16:05:17.0240 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 16:06:37.3797 INFO Productos obtenidos: 20 
+2024-11-04 16:06:37.4055 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 16:06:38.3902 INFO Llamada al metodo GetCategories. 
+2024-11-04 16:06:38.6357 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 16:10:21.4155 INFO Productos obtenidos: 20 
+2024-11-04 16:10:21.4411 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 16:10:22.6659 INFO Llamada al metodo GetCategories. 
+2024-11-04 16:10:22.9127 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 16:11:11.8616 INFO Productos obtenidos: 20 
+2024-11-04 16:11:11.8902 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 16:11:12.9268 INFO Llamada al metodo GetCategories. 
+2024-11-04 16:11:13.1703 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 16:14:15.5332 INFO Productos obtenidos: 20 
+2024-11-04 16:14:15.5592 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 16:14:16.6326 INFO Llamada al metodo GetCategories. 
+2024-11-04 16:14:16.8935 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 16:14:38.3590 INFO Productos obtenidos: 20 
+2024-11-04 16:14:38.3846 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 16:14:39.4378 INFO Llamada al metodo GetCategories. 
+2024-11-04 16:14:39.7162 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 16:14:51.1509 INFO Llamada al metodo DeleteProducts. 
+2024-11-04 16:14:51.5326 INFO 7 producto/s eliminado correctamente. 
+2024-11-04 16:14:56.0853 INFO Llamada al metodo DeleteProducts. 
+2024-11-04 16:14:56.4593 INFO 13 producto/s eliminado correctamente. 
+2024-11-04 16:14:59.9358 INFO Llamada al metodo LimitResult. 
+2024-11-04 16:15:00.2065 INFO Productos limitados en 1. 
+2024-11-04 16:16:45.4948 INFO Productos obtenidos: 20 
+2024-11-04 16:16:45.5306 INFO Metodo GetProducts finalizado correctamente. Lista de productos actualizada. 
+2024-11-04 16:16:47.0207 INFO Llamada al metodo GetCategories. 
+2024-11-04 16:16:47.2728 INFO Categorias obtenidas correctamente. Categorias: electronics, jewelery, men's clothing, women's clothing 
+2024-11-04 16:16:56.5317 INFO Llamada al metodo SortResults. 
+2024-11-04 16:16:56.7829 INFO Productos ordenados de forma descendente 
+2024-11-04 16:16:57.4549 INFO Llamada al metodo SortResults. 
+2024-11-04 16:16:57.7113 INFO Productos ordenados de forma ascendente 

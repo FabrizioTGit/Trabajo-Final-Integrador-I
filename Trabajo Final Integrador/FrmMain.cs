@@ -38,36 +38,41 @@ namespace Trabajo_Final_Integrador
 
         private void cmbBoxCategory_SelectedIndexChanged(object sender, EventArgs e)
         {
-            string? selectedCategory = cmbBoxCategory.SelectedItem.ToString();
-
-            FilteredProducts = new List<ApiProducts>(Products);
-
-            if (int.TryParse(txtBoxLimit.Text, out int limit) && limit > 0)
+            if (cmbBoxCategory.SelectedItem != null)
             {
-                if (selectedCategory == "All")
+                string? selectedCategory = cmbBoxCategory.SelectedItem.ToString();
+
+                FilteredProducts = new List<ApiProducts>(Products);
+
+                if (int.TryParse(txtBoxLimit.Text, out int limit) && limit > 0)
                 {
-                    connecectionApi.LimitResult(Products, limit);
+                    if (selectedCategory == "All")
+                    {
+                        connecectionApi.LimitResult(Products, limit);
+                    }
+                    else
+                    {
+                        connecectionApi.GetInCategory(FilteredProducts, selectedCategory);
+                        connecectionApi.LimitResult(FilteredProducts, limit);
+                    }
                 }
                 else
                 {
-                    connecectionApi.GetInCategory(FilteredProducts, selectedCategory);
-                    connecectionApi.LimitResult(FilteredProducts, limit);
+                    if (selectedCategory == "All")
+                    {
+                        dataGridView.DataSource = Products;
+                    }
+                    else
+                    {
+                        connecectionApi.GetInCategory(FilteredProducts, selectedCategory);
+                    }
                 }
+
+                dataGridView.DataSource = null;
+                dataGridView.DataSource = FilteredProducts;
             }
-            else
-            {
-                if (selectedCategory == "All")
-                {
-                    dataGridView.DataSource = Products;
-                }
-                else
-                {
-                    connecectionApi.GetInCategory(FilteredProducts, selectedCategory);
-                }
-            }
-            dataGridView.DataSource = null;
-            dataGridView.DataSource = FilteredProducts;
         }
+
 
 
         private void btnAscDesc_Click(object sender, EventArgs e)
@@ -101,14 +106,17 @@ namespace Trabajo_Final_Integrador
 
         private void btnNew_Click(object sender, EventArgs e)
         {
-            using (FrmNew form = new FrmNew(this.Products))
+            using (FrmNew form = new FrmNew(this.Products, this.Categories))
             {
                 if (form.ShowDialog() == DialogResult.OK)
                 {
                     this.Products = form.newProducts;
-
-                    dataGridView.DataSource = null;
-                    dataGridView.DataSource = this.Products;
+                    this.Categories = form.newCategory;
+                    
+                    cmbBoxCategory.DataSource = null;
+                    cmbBoxCategory.DataSource = Categories;
+                    dataGridView.Refresh();
+                    cmbBoxCategory.SelectedIndex = 0;
                 }
             }
         }
@@ -147,11 +155,16 @@ namespace Trabajo_Final_Integrador
             var filteredProducts = (List<ApiProducts>)dataGridView.DataSource;
             var selectedProduct = filteredProducts[e.RowIndex];
 
-            using (FrmEdit form = new FrmEdit(selectedProduct, this.Products))
+            using (FrmEdit form = new FrmEdit(selectedProduct, this.Products, this.Categories))
             {
                 if (form.ShowDialog() == DialogResult.OK)
                 {
+                    this.Categories = form.newCategory;
+
+                    cmbBoxCategory.DataSource = null;
+                    cmbBoxCategory.DataSource = Categories;
                     dataGridView.Refresh();
+                    cmbBoxCategory.SelectedIndex = 0;
                 }
             }
         }

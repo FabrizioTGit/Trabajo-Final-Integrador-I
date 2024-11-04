@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmNew));
             lblCategory = new Label();
             lblDescription = new Label();
             lblPrice = new Label();
@@ -48,6 +49,7 @@
             // lblCategory
             // 
             lblCategory.AutoSize = true;
+            lblCategory.ForeColor = SystemColors.Window;
             lblCategory.Location = new Point(63, 229);
             lblCategory.Name = "lblCategory";
             lblCategory.Size = new Size(61, 15);
@@ -57,6 +59,7 @@
             // lblDescription
             // 
             lblDescription.AutoSize = true;
+            lblDescription.ForeColor = SystemColors.Window;
             lblDescription.Location = new Point(63, 182);
             lblDescription.Name = "lblDescription";
             lblDescription.Size = new Size(72, 15);
@@ -66,6 +69,7 @@
             // lblPrice
             // 
             lblPrice.AutoSize = true;
+            lblPrice.ForeColor = SystemColors.Window;
             lblPrice.Location = new Point(63, 134);
             lblPrice.Name = "lblPrice";
             lblPrice.Size = new Size(43, 15);
@@ -75,6 +79,7 @@
             // lblTitle
             // 
             lblTitle.AutoSize = true;
+            lblTitle.ForeColor = SystemColors.Window;
             lblTitle.Location = new Point(63, 89);
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(40, 15);
@@ -84,6 +89,7 @@
             // lblId
             // 
             lblId.AutoSize = true;
+            lblId.ForeColor = SystemColors.Window;
             lblId.Location = new Point(65, 45);
             lblId.Name = "lblId";
             lblId.Size = new Size(21, 15);
@@ -100,22 +106,30 @@
             // 
             // btnCancel
             // 
+            btnCancel.BackColor = SystemColors.HotTrack;
+            btnCancel.FlatAppearance.BorderSize = 0;
+            btnCancel.FlatStyle = FlatStyle.Flat;
+            btnCancel.ForeColor = SystemColors.ButtonHighlight;
             btnCancel.Location = new Point(155, 287);
             btnCancel.Name = "btnCancel";
             btnCancel.Size = new Size(83, 23);
             btnCancel.TabIndex = 29;
             btnCancel.Text = "Cancel";
-            btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.UseVisualStyleBackColor = false;
             btnCancel.Click += btnCancel_Click;
             // 
             // btnAccept
             // 
+            btnAccept.BackColor = SystemColors.HotTrack;
+            btnAccept.FlatAppearance.BorderSize = 0;
+            btnAccept.FlatStyle = FlatStyle.Flat;
+            btnAccept.ForeColor = SystemColors.ButtonHighlight;
             btnAccept.Location = new Point(49, 287);
             btnAccept.Name = "btnAccept";
             btnAccept.Size = new Size(83, 23);
             btnAccept.TabIndex = 28;
             btnAccept.Text = "Aceptar";
-            btnAccept.UseVisualStyleBackColor = true;
+            btnAccept.UseVisualStyleBackColor = false;
             btnAccept.Click += btnAccept_Click;
             // 
             // txtBoxCategory
@@ -154,6 +168,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(45, 66, 91);
             ClientSize = new Size(291, 356);
             Controls.Add(lblCategory);
             Controls.Add(lblDescription);
@@ -167,6 +182,7 @@
             Controls.Add(txtBoxDescription);
             Controls.Add(txtBoxPrice);
             Controls.Add(txtBoxTitle);
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
             Name = "FrmNew";
             Text = "Agregar Producto";
